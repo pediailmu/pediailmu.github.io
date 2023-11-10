@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Sensor Arduino - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Sensor Arduino, , , , , , , 0, , , , , , 0, fungsi-dari-sensor-arduino, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Sensor Arduino - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Sensor Arduino, , , , , , , 0, , , , , , 0, fungsi-dari-sensor-arduino, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Sensor Arduino - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Sensor Arduino, , , , , , , 0, , , , , , 0, fungsi-dari-sensor-arduino, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediailmu.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediailmu.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediailmu.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediailmu.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediailmu.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediailmu.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediailmu.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediailmu.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediailmu.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediailmu.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Sensor Arduino</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">hernapasaribu02</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Sensor+Arduino" alt="Fungsi Dari Sensor Arduino">
+                    </div>
+                    <p></p>
+                    <p>Bagaimana cara pengkabelan dari sensor pir ke arduino?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-pengkabelan-dari-sensor-pir-ke-arduino%e2%80%8b">1.
+                                            Bagaimana cara pengkabelan dari sensor pir ke arduino?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alasan-menggunakan-sensor-ultrasonik-untuk-arduino">2.
+                                            alasan menggunakan sensor ultrasonik untuk arduino ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-membuat-program-agar-3-sensor-ultrasonik-terhubung-ke-arduino-dan-menghasilkan-output-buzzer-dengan-suara-berbeda-dari-setiap-sensor">3.
+                                            Cara membuat program agar 3 sensor ultrasonik terhubung ke arduino dan menghasilkan output buzzer dengan suara berbeda dari setiap sensor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-voidloop-dan-voidsetup-pada-koding-arduino">4.
+                                            Apa fungsi dari voidloop dan voidsetup pada koding arduino </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-yang-digunakan-untuk-memprogram-arduino-nano-adalah%e2%80%a6-aarduino-loopbarduino-megacarduino-usbdarduino-ide%e2%80%8b">5.
+                                            Program yang digunakan untuk memprogram arduino nano adalah….AArduino LOOPBArduino MEGACArduino USBDArduino IDE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-ppg-sensor-dan-fungsinya%e2%80%8b">6.
+                                            apa itu PPG Sensor? Dan fungsinya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-sensori-neuron">7.
+                                            apa fungsi sensori neuron</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-fungsi-dari-beberapa-tombol-arduino%e2%80%8b">8.
+                                            Sebutkan fungsi-fungsi dari beberapa tombol Arduino​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-fungsi-sensor-beban-magnet2-fungsi-sensor-zat-kimia3-fungsi-sensor-jarak4-pada-saat-pandemi-ini-sensor-apa-yang-sering-di-gunakanbantu-jawab-teman%c2%b2mau-dikumpul-malam-ini-%e2%80%8b">9.
+                                            1.fungsi sensor beban magnet?2.fungsi sensor zat kimia3.fungsi sensor jarak4.pada saat pandemi ini sensor apa yang sering di gunakan?bantu jawab teman²,mau dikumpul malam ini ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-untuk-kakak-kakak-yang-pro-elektro-bantu-sy-apa-yang-dimaksud-bootloader-arduino-apa-fungsi-bootloader-arduino-apa-kelebihan-ic-yang-diisi-bootloader-arduino">10.
+                                            tolong untuk kakak kakak yang pro-elektro bantu sy...
+apa yang dimaksud bootloader arduino ?
+apa fungsi bootloader arduino ?
+apa kelebihan ic yang diisi bootloader arduino ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sensor-iat-adalah%e2%80%8b">11.
+                                            Fungsi sensor IAT adalah?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sensor-ultrasonik">12.
+                                            fungsi sensor ultrasonik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-kegunaan-dari-fungsi-setup-2-sebutkan-kegunaan-dari-fungsi-loop-3-apa-yang-dimaksud-dengan-variabel-sebutkan-juga-3-contohnya-pada-program-arduino-4-apa-yang-dimaksud-dengan-konsta">13.
+                                            1. Sebutkan kegunaan dari fungsi Setup() 2. Sebutkan kegunaan dari fungsi Loop() 3. Apa yang dimaksud dengan variabel, sebutkan juga 3 contohnya pada program arduino 4. Apa yang dimaksud dengan konstanta, sebutkan juga 3 contohnya pada program arduino 5. Apa yang dimaksud dengan fungsi (Function) pada program arduino, sertakan contoh cara pembuatan dan pemanggilan suatu fungsi.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-20-pin-input-output-mikrokontroler-arduino-uno%e2%80%8b">14.
+                                            fungsi dari 20 pin input output mikrokontroler Arduino uno​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-fungsi-sensor-beban-magnet2-fungsi-sensor-zat-kimia3-fungsi-sensor-jarak4-pada-pandemi-saat-ini-sensor-apa-yang-sering-di-gunakantolong-bantu-jawab-kak%e2%80%8b">15.
+                                            1.fungsi sensor beban magnet?2.fungsi sensor zat kimia?3.fungsi sensor jarak?4.pada pandemi saat ini sensor apa yang sering di gunakan?tolong bantu jawab kak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-sensori-pada-kulit">16.
+                                            apa fungsi sensori pada kulit</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari%c2%a0usb%c2%a0pada-arduino-sebagai-berikut%c2%a0kecuali%e2%80%a6akomunikasi%c2%a0serial%c2%a0antara-papan-dan-komputerbmemuat-program-dari-komputer-ke-dalam-arduinocmembenarkan-kesalahan-p">17.
+                                            Fungsi dari USB pada arduino sebagai berikut kecuali…AKomunikasi serial antara papan dan komputerBMemuat program dari komputer ke dalam arduinoCMembenarkan kesalahan pemrogramanDMemberi daya listrik kepada arduino​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-jenis-dan-fungsi-sensor-mini-5-buah-sensor">18.
+                                            Sebutkan jenis dan fungsi sensor mini (5 buah sensor)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pin-gnd-ground-pada-arduino-uno-berfungsi-sebagai%c2%a0%e2%80%8b">19.
+                                            Pin GND (ground) pada Arduino UNO berfungsi sebagai? *​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-arduino-nano%e2%80%8b">20.
+                                            fungsi arduino nano​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#papan-mikrokontroler-yang-digunakan-pada-robot-disebut-a-sensor-b-motor-c-arduino-d-manipulator%e2%80%8b">21.
+                                            Papan mikrokontroler yang digunakan pada robot disebut A. sensor B. motor C. arduino D. manipulator​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arduino-adalah-pemrograman%c2%a0procesing%c2%a0yang-memiliki-fungsi%c2%a0void-loop%c2%a0void-loop%c2%a0memiliki-makna%e2%80%a6-asemua-kode-akan-dibaca-berulang-kali-terus-menerus-oleh-arduinobb">22.
+                                            arduino adalah pemrograman procesing yang memiliki fungsi void loop(), void loop() memiliki makna….asemua kode akan dibaca berulang kali (terus menerus) oleh arduinobbeberapa kode akan dibaca sekali oleh arduinocsemua kode akan dibaca satu kali oleh arduinodbeberapa kode akan dibaca berulang kali oleh arduino​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sensor-apakah-yang-fungsinya-seperti-mata">23.
+                                            sensor apakah yang fungsinya seperti mata?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sensor-sensor-pada-mesin-efi">24.
+                                            fungsi sensor sensor pada mesin efi? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-sensor-kelembaban">25.
+                                            fungsi dari sensor kelembaban</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-kegunaan-dari-fungsi-setup-2-sebutkan-kegunaan-dari-fungsi-loop-3-apa-yang-dimaksud-dengan-variabel-sebutkan-juga-3-contohnya-pada-program-arduino-4-apa-yang-dimaksud-dengan-konsta">26.
+                                            1. Sebutkan kegunaan dari fungsi Setup() 2. Sebutkan kegunaan dari fungsi Loop() 3. Apa yang dimaksud dengan variabel, sebutkan juga 3 contohnya pada program arduino 4. Apa yang dimaksud dengan konstanta, sebutkan juga 3 contohnya pada program arduino 5. Apa yang dimaksud dengan fungsi (Function) pada program arduino, sertakan contoh cara pembuatan dan pemanggilan suatu fungsi.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-dari-sensor">27.
+                                            apakah fungsi dari sensor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#analisilah-fungsi-sensor-dalam">28.
+                                            Analisilah fungsi sensor dalam </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-instuksi-arduino%e2%80%8b">29.
+                                            apa fungsi instuksi arduino​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi-ground-pada-perangkat-arduino">30.
+                                            Tuliskan fungsi ground pada perangkat arduino</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arduino-adalah-suatu%c2%a0microcontroller%c2%a0atau-sebuah-sistem-komputer-yang-fungsional-dalam-sebuah%c2%a0chip%c2%a0yang-di-dalamnya-sudah-ada%c2%a0processor-memory%c2%a0dll-yang-termasuk-arduino">31.
+                                            Arduino adalah suatu microcontroller atau sebuah sistem komputer yang fungsional dalam sebuah chip yang di dalamnya sudah ada processor, memory dll. Yang termasuk Arduino di bawah ini kecuali…..AArduino Mega BArduino Uno CArduino Nano DArduino One ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sensor-dalam-kamera%e2%80%8b">32.
+                                            fungsi sensor dalam kamera​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-sensor-pada-robot">33.
+                                            apa fungsi sensor pada robot?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sensor-pada-gambar-adalah%e2%80%8b">34.
+                                            fungsi sensor pada gambar adalah?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-trainer-kit-arduino">35.
+                                            Apa fungsi trainer kit Arduino </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-reseptor-sensori">36.
+                                            fungsi dari reseptor sensori</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-bagian-bagian-arduino-%e2%80%8b">37.
+                                            sebutkan fungsi bagian bagian Arduino ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-membuat-program-agar-3-sensor-ultrasonik-terhubung-ke-arduino-dan-menghasilkan-output-buzzer-dengan-suara-berbeda-dari-setiap-sensor">38.
+                                            Cara membuat program agar 3 sensor ultrasonik terhubung ke arduino dan menghasilkan output buzzer dengan suara berbeda dari setiap sensor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagian-arduino-yang-berfungsi-untuk-koneksi-input-atau-output-adalah">39.
+                                            Bagian arduino yang berfungsi untuk koneksi input atau output adalah ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arduino-adalah-pemrograman%c2%a0procesing%c2%a0yang-memiliki-fungsi%c2%a0void-setup%c2%a0void-setup%c2%a0memiliki-makna%e2%80%a6-abeberapa-kode-di%c2%a0void-setup%c2%a0akan-dibaca-sekali-oleh-ard">40.
+                                            Arduino adalah pemrograman procesing yang memiliki fungsi void setup(), void setup() memiliki makna….Abeberapa kode di void setup akan dibaca sekali oleh arduinoBbeberapa kode di void setup akan dibaca sekali oleh arduinoCsemua kode di void setup akan dibaca sekali oleh arduinoDsemua kode di void setup akan dibaca berulang kali oleh arduino​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-pengkabelan-dari-sensor-pir-ke-arduino%e2%80%8b">
+                            1. Bagaimana cara pengkabelan dari sensor pir ke arduino?​</h2><br />
+                        <p>Jawaban:</p><p></p><p>Wiring diagram untuk PIR ke Arduino adalah</p><p>VCC pin PIR ke pin 5 Volt Arduino</p><p>GND pin PIR ke pin GND Arduino</p><p>Data pin PIR ke pin out Arduino (misal pin out 2,7,8) </p><br />
+                                            <h2 class="ez-toc-section" id="alasan-menggunakan-sensor-ultrasonik-untuk-arduino">
+                            2. alasan menggunakan sensor ultrasonik untuk arduino ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sebagai pendeteksi ketinggian air di
+</p><p>sungai dapat direalisasikan. Perencanaan alat ini
+</p><p>sesuai untuk peringatan dini mencegah banjir. </p><p><strong>Penjelasan:</strong></p><p><strong>Aplikasi  software LabVIEW dalam menampilkan data
+</strong></p><p><strong>hasil pengukuran. Dengan menggunakan sensor
+</strong></p><p><strong>ultrasonik untuk mengukur ketinggian level
+</strong></p><p><strong>permukaan air, hasilnya diolah mikrokontroler
+</strong></p><p><strong>arduino uno.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-membuat-program-agar-3-sensor-ultrasonik-terhubung-ke-arduino-dan-menghasilkan-output-buzzer-dengan-suara-berbeda-dari-setiap-sensor">
+                            3. Cara membuat program agar 3 sensor ultrasonik terhubung ke arduino dan menghasilkan output buzzer dengan suara berbeda dari setiap sensor</h2><br />
+                        <p>Alat yang digunakan berupa Sensor Ultrasonik HC- SR04 berupa bunyi Buzzer apabila sensor mendeteksi jarak objek dan LED </p><p></p><p>Semoga membantu</p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-voidloop-dan-voidsetup-pada-koding-arduino">
+                            4. Apa fungsi dari voidloop dan voidsetup pada koding arduino </h2><br />
+                        <p>Jawaban:</p><p>Void Loop</p><p>Fungi ini akan secara aktif mengontrol board Arduino baik membaca input atau merubah output. berbeda dengan void setup yang hanya dijalankan sekali oleh Arduino, fungsi void loop akan dijalankan berulang kali oleh Arduino secara berkala</p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="program-yang-digunakan-untuk-memprogram-arduino-nano-adalah%e2%80%a6-aarduino-loopbarduino-megacarduino-usbdarduino-ide%e2%80%8b">
+                            5. Program yang digunakan untuk memprogram arduino nano adalah….AArduino LOOPBArduino MEGACArduino USBDArduino IDE​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D
+. Arduino IDE</p><p><strong>Penjelasan:</strong></p><p>Arduino IDE (Integrated Development Environment), software yang digunakan untuk memprogram di arduino, dengan kata lain Arduino IDE sebagai media untuk memprogram board Arduino.</p><p></p><p></p><p>semoga terbantu ya !!!</p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-ppg-sensor-dan-fungsinya%e2%80%8b">
+                            6. apa itu PPG Sensor? Dan fungsinya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>PPG Sensor adalah singkatan dari Photoplethysmography Sensor. PPG Sensor adalah sensor optik yang digunakan untuk mengukur denyut nadi atau detak jantung seseorang. Sensor ini bekerja dengan memancarkan cahaya inframerah ke dalam kulit dan kemudian mendeteksi jumlah cahaya yang dipantulkan kembali oleh aliran darah di dalam pembuluh darah. </p><p></p><p>Fungsi PPG Sensor adalah untuk memonitor dan mengukur detak jantung secara non-invasif dan real-time. Sensor ini digunakan dalam berbagai aplikasi seperti perangkat kesehatan wearable, monitor detak jantung, monitor tidur, dan perangkat medis lainnya. PPG Sensor juga dapat digunakan untuk mengukur tingkat oksigen dalam darah (SpO2) dan memberikan informasi mengenai kualitas sirkulasi darah.</p><p><strong>Jawaban:</strong></p><p>PPG) merupakan perangkat yang dapat mendeteksi perubahan volume darah menggunakan sensor optik.</p><p>untuk mengukur perubahan sirkulasi darah .</p><p><strong>Penjelasan:</strong></p><p>semoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-sensori-neuron">
+                            7. apa fungsi sensori neuron</h2><br />
+                        neuron sensori berfungsi untuk menghantarkan rangsang ke sistem saraf pusat (bisa otak bisa sumsum tulang belkang) sel saraf yang berfungsi menghantarkan impuls dari resestor menuju ke otak<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-fungsi-dari-beberapa-tombol-arduino%e2%80%8b">
+                            8. Sebutkan fungsi-fungsi dari beberapa tombol Arduino​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Arduino merupakan pengendali mikro single-board yang bersifat terbuka, diturunkan dari sebuah Wiring platform, didesain untuk meringankan penggunaan elektronik dalam berbagai bidang. Perangkatkerasnya memiliki prosesor Atmel AVR dan softwarenya juga mempunyai bahasa pemrograman sendiri.</strong></p><p></p><p><strong>Penjelasan:</strong></p><p><strong>ᴍ</strong><strong>ᴀ</strong><strong>ᴀ</strong><strong>ғ</strong><strong> </strong><strong>ᴊ</strong><strong>ɪ</strong><strong>ᴋ</strong><strong>ᴀ</strong><strong> </strong><strong>s</strong><strong>ᴀ</strong><strong>ʟ</strong><strong>ᴀ</strong><strong>ʜ</strong></p><p><strong>_</strong><strong>ˢ</strong><strong>ᵉ</strong><strong>ᵐ</strong><strong>ᵒ</strong><strong>ᵍ</strong><strong>ᵃ</strong><strong> </strong><strong>ᵐ</strong><strong>ᵉ</strong><strong>ᵐ</strong><strong>ᵇ</strong><strong>ᵃ</strong><strong>ⁿ</strong><strong>ᵗ</strong><strong>ᵘ</strong></p><p></p><p><strong>ᒍ</strong><strong>ᗩ</strong><strong>ᗪ</strong><strong>I</strong><strong>K</strong><strong>ᗩ</strong><strong>ᑎ</strong><strong> </strong><strong>ᒍ</strong><strong>ᗩ</strong><strong>ᗯ</strong><strong>ᗩ</strong><strong>ᗷ</strong><strong>ᗩ</strong><strong>ᑎ</strong><strong> </strong><strong>T</strong><strong>ᗴ</strong><strong>ᖇ</strong><strong>ᑕ</strong><strong>ᗴ</strong><strong>ᖇ</strong><strong>ᗪ</strong><strong>ᗩ</strong><strong>Տ</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-fungsi-sensor-beban-magnet2-fungsi-sensor-zat-kimia3-fungsi-sensor-jarak4-pada-saat-pandemi-ini-sensor-apa-yang-sering-di-gunakanbantu-jawab-teman%c2%b2mau-dikumpul-malam-ini-%e2%80%8b">
+                            9. 1.fungsi sensor beban magnet?2.fungsi sensor zat kimia3.fungsi sensor jarak4.pada saat pandemi ini sensor apa yang sering di gunakan?bantu jawab teman²,mau dikumpul malam ini ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. baru tau nih ada sensor beban magnet, kalo sensor beban biasanya menggunakan loadcell, fungsinga untuk mengukur berat/dsb, tergantung programnya, sedangkan magnet ada sendiri, sensor magnet, jika terkena magnet sensor akan aktif, biasanya buat sensor deteksi, contoh pemasangan pada pintu, jika pintu terbuka sensor tidak aktif menandakan ada yg membuka (maaf kalo penjelasan nya rancu) </p><p></p><p>2. fungsi sensor zat kimia, ada beberapa, biasanya untuk mendeteksi suatu zat kimia atau mengukur zat kimia tersebut, contoh sensor asap/gas untuk mengecek kebakaran atau kebocoran gas</p><p></p><p>3. sensor jarak, fungsi nya setau saya ada 2, bisa mendeteksi objek dan mengukur jarak object, tergantung implementasi sensornya utk apa</p><p></p><p>4. sensor suhu/thermo infrared, mengukur suhu tanpa sentuhan</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-untuk-kakak-kakak-yang-pro-elektro-bantu-sy-apa-yang-dimaksud-bootloader-arduino-apa-fungsi-bootloader-arduino-apa-kelebihan-ic-yang-diisi-bootloader-arduino">
+                            10. tolong untuk kakak kakak yang pro-elektro bantu sy...
+apa yang dimaksud bootloader arduino ?
+apa fungsi bootloader arduino ?
+apa kelebihan ic yang diisi bootloader arduino ?</h2><br />
+                        bootloader arduino itu semacam processing unit pada arduino, gunanya buat menjembatani antara input waktu kita koding program (bahasa arduinonya SKETCH) sampai program itu selesai dicompile<br /><br />IC yang diisi bootloader arduino dapat dgn mudah diisi program atau fungsi-fungsi lewat software IDE<br />
+                                            <h2 class="ez-toc-section" id="fungsi-sensor-iat-adalah%e2%80%8b">
+                            11. Fungsi sensor IAT adalah?​</h2><br />
+                        Fungsi sensor IAT adalah?<p>__________________________________</p><p>SENSOR IAT (Intake Air Temperature).</p><p>Sensor IAT bertugas untuk mendeteksi suhu udara yang masuk ke dalam throttle body</p><p>__________________________________</p><p></p>semoga bermanfaat ✨☁️semangat belajar ✨☀️<p></p>likejadikan jawaban tercerdaskasih bintang limafollow ☔✏️<p></p>learn with candy ☔✏️.<p></p><p></p>Good morning ✨☀️.have a nice day✨<p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-sensor-ultrasonik">
+                            12. fungsi sensor ultrasonik</h2><br />
+                        agar tidak bertabrakan<br /><br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-kegunaan-dari-fungsi-setup-2-sebutkan-kegunaan-dari-fungsi-loop-3-apa-yang-dimaksud-dengan-variabel-sebutkan-juga-3-contohnya-pada-program-arduino-4-apa-yang-dimaksud-dengan-konsta">
+                            13. 1. Sebutkan kegunaan dari fungsi Setup() 2. Sebutkan kegunaan dari fungsi Loop() 3. Apa yang dimaksud dengan variabel, sebutkan juga 3 contohnya pada program arduino 4. Apa yang dimaksud dengan konstanta, sebutkan juga 3 contohnya pada program arduino 5. Apa yang dimaksud dengan fungsi (Function) pada program arduino, sertakan contoh cara pembuatan dan pemanggilan suatu fungsi.​</h2><br />
+                        <p>1 . Sebutkan kegunaan dari fungsi Setup!</p><p><strong>page setup digunakan untuk mengatur batas tepi kertas (margin), model dokumen (orientasi kertas), mengatur ukuran kertas size, mengatur area pencetakan (print area), mengatur penggalan halaman (page break), memberi background dokumen, dan mencetak/memberi judul tabel.</strong></p><p></p><p>2. Sebutkan kegunaan dari fungsi Loop!</p><p><strong>berguna saat kita ingin melakukan sebuah perintah yang perlu dijalankan berulang-ulang seperti melakukan perhitungan maupaun melakukan visualisasi terhadap banyak variabel secara serentak.</strong></p><p></p><p>3. Apa yang dimaksud dengan variabel, sebutkan juga 3 contohnya pada program arduino!</p><p><strong>Dalam pemograman mikrokontroller dikenal ada 2 macam variabel yaitu :</strong></p><p></p><p><strong>Dalam pemograman mikrokontroller dikenal ada 2 macam variabel yaitu :1. Variabel global; yaitu variabel yang dideklarasi diluar fungsi dan berlaku secara umum atau dapat diakses dimana saja</strong></p><p></p><p><strong>Dalam pemograman mikrokontroller dikenal ada 2 macam variabel yaitu :1. Variabel global; yaitu variabel yang dideklarasi diluar fungsi dan berlaku secara umum atau dapat diakses dimana saja2. Variabel lokal; yaitu variabel yang dideklarasi di dalam fungsi dan hanya dapat diakses oleh pernyataan yang ada di dalam fungsi.</strong></p><p></p><p>4. Apa yang dimaksud dengan konstanta, sebutkan juga 3 contohnya pada program arduino!</p><p><strong>Konstanta adalah nilai besaran besaran yang tidak berubah besar atau memiliki nilai yang tetap. Dalam pemograman arduino ditulis dengan kata “const” yang artinya konstanta. Contoh konstanta:</strong></p><p></p><p><strong>Konstanta adalah nilai besaran besaran yang tidak berubah besar atau memiliki nilai yang tetap. Dalam pemograman arduino ditulis dengan kata “const” yang artinya konstanta. Contoh konstanta:const  int harga = 12;</strong></p><p><strong>Konstanta adalah nilai besaran besaran yang tidak berubah besar atau memiliki nilai yang tetap. Dalam pemograman arduino ditulis dengan kata “const” yang artinya konstanta. Contoh konstanta:const  int harga = 12;yaitu variabel “harga” adalah sebuah konstanta bilangan bulat integer yang memiliki nilai tetap yaitu 12. Nilai ini hanya dapat dibaca dan tidak dapat diubah selama program dijalankan.</strong></p><p></p><p><strong>Konstanta adalah nilai besaran besaran yang tidak berubah besar atau memiliki nilai yang tetap. Dalam pemograman arduino ditulis dengan kata “const” yang artinya konstanta. Contoh konstanta:const  int harga = 12;yaitu variabel “harga” adalah sebuah konstanta bilangan bulat integer yang memiliki nilai tetap yaitu 12. Nilai ini hanya dapat dibaca dan tidak dapat diubah selama program dijalankan.Penamaan untuk variabel dan konstanta tidak boleh menggunakan kata-kata yang digunakan dalam sketsa program arduino seperti for, if, while dan etc. Selain itu nama tidak boleh ada spasi, jika diseleksi 2 buah kata untuk menyatakan atau konstanta harus dilayani dengan tanda garis bawah (_) misalnya: “waktu_tunggu”.</strong></p><p></p><p>5. Apa yang dimaksud dengan fungsi (Function) pada program arduino, sertakan contoh cara pembuatan dan pemanggilan suatu fungsi!</p><p><strong>Function (fungsi) adalah blok pemrograman yang mempunyai nama dan mempunyai statement yang akan di eksekusi ketika function tersebut di panggil. Fungsi void setup() dan void loop() telah di bahas di atas dan pembuatan fungsi yang lain akan di bahas selanjutnya.</strong></p><p></p><p><strong>#</strong><strong>L</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong>n</strong><strong>A</strong><strong>b</strong><strong>o</strong><strong>u</strong><strong>t</strong><strong>T</strong><strong>e</strong><strong>c</strong><strong>h</strong><strong>n</strong><strong>o</strong><strong>l</strong><strong>o</strong><strong>g</strong><strong>i</strong><strong>e</strong><strong>s</strong><strong>A</strong><strong>n</strong><strong>d</strong><strong>I</strong><strong>n</strong><strong>f</strong><strong>o</strong><strong>r</strong><strong>m</strong><strong>a</strong><strong>t</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong>S</strong><strong>u</strong><strong>b</strong><strong>j</strong><strong>e</strong><strong>c</strong><strong>t</strong><strong>s</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-20-pin-input-output-mikrokontroler-arduino-uno%e2%80%8b">
+                            14. fungsi dari 20 pin input output mikrokontroler Arduino uno​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Software Arduino</p><p>Arduino Uno dapat diprogram dengan perangkat lunak Arduino . Pada ATMega328 di Arduino terdapat bootloader yang memungkinkan Anda untuk meng-upload kode baru untuk itu tanpa menggunakan programmer hardware eksternal.</p><p>            IDE Arduino adalah software yang sangat canggih ditulis dengan menggunakan Java. IDE Arduino terdiri dari:</p><p>1.         Editor program, sebuah window yang memungkinkan pengguna menulis dan mengeditprogram dalam bahasa Processing.</p><p>2.        Compiler, sebuah modul yang mengubah kode program (bahasa Processing) menjadi kode biner. Bagaimanapun sebuah mikrokontroler tidak akan bisa memahami bahasa Processing. Yang bisa dipahami oleh mikrokontroler adalah kode biner. Itulah sebabnya compiler diperlukan dalam hal ini.</p><p>3.        Uploader, sebuah modul yang memuat kode biner dari komputer ke dalam memory didalam papan Arduino.</p><p>Sebuah kode program Arduino umumnya disebut dengan istilah sketch. Kata“sketch” digunakan secara bergantian dengan “kode program” dimana keduanya memiliki arti yang sama. </p><p>MAAF KALAU SALAH</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-fungsi-sensor-beban-magnet2-fungsi-sensor-zat-kimia3-fungsi-sensor-jarak4-pada-pandemi-saat-ini-sensor-apa-yang-sering-di-gunakantolong-bantu-jawab-kak%e2%80%8b">
+                            15. 1.fungsi sensor beban magnet?2.fungsi sensor zat kimia?3.fungsi sensor jarak?4.pada pandemi saat ini sensor apa yang sering di gunakan?tolong bantu jawab kak​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.dengan cara mendeteksi perubahan pada hambatan listrik dari bahan magnetoresistif anisotropik yang ada di dalamnya.</p><p>2.sensor yang mendeteksi jumlah suatu zat kimia dengan cara mengubah besaran kimia menjadi besaran listrik.</p><p>3.suatu perangkat elektronik yang mampu mendeteksi keberadaan suatu benda berdasarkan jarak benda tersebut dan tampa adanya kontak fisik.</p><p>4.sensor jarak </p><p>maaf klo salah </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-sensori-pada-kulit">
+                            16. apa fungsi sensori pada kulit</h2><br />
+                        Saraf sensori pd kulit berfungsi untuk menghantarkan reseptor pd kulit ke saraf pusat<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari%c2%a0usb%c2%a0pada-arduino-sebagai-berikut%c2%a0kecuali%e2%80%a6akomunikasi%c2%a0serial%c2%a0antara-papan-dan-komputerbmemuat-program-dari-komputer-ke-dalam-arduinocmembenarkan-kesalahan-p">
+                            17. Fungsi dari USB pada arduino sebagai berikut kecuali…AKomunikasi serial antara papan dan komputerBMemuat program dari komputer ke dalam arduinoCMembenarkan kesalahan pemrogramanDMemberi daya listrik kepada arduino​</h2><br />
+                        <p><strong>J</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>:</strong></p><p>C. Membenarkan kesalahan pemrograman</p><p>Semoga membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-jenis-dan-fungsi-sensor-mini-5-buah-sensor">
+                            18. Sebutkan jenis dan fungsi sensor mini (5 buah sensor)</h2><br />
+                        1. Sensor Cahaya :<br /> - LDR : untuk mengubah intensitas cahaya menjadi listrik<br />- Fotodiode : Mengubah intensitas cahaya menjadi konduktivitas dioda<br />- Fototransistor : Mengubah Intensitas Cahaya menjadi konduktivitas transistor<br />
+                                            <h2 class="ez-toc-section" id="pin-gnd-ground-pada-arduino-uno-berfungsi-sebagai%c2%a0%e2%80%8b">
+                            19. Pin GND (ground) pada Arduino UNO berfungsi sebagai? *​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Penjelasan Komponen Pada Board Arduino Uno. (orange) Pin Analog reference (Aref), berfungsi untuk mengatur tegangan referensi eksternal (antar 0 dan 5 Volts). (hijau terang) Pin GND, berfungsi sebagai pin digital ground</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-arduino-nano%e2%80%8b">
+                            20. fungsi arduino nano​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Dapat dihubungkan ke komputer menggunakan port USB Mini-B. Arduino Nano dirancang dan diproduksi oleh perusahaan Gravitech.</p><p><strong>Penjelasan:</strong></p><p>Arduino Nano adalah salah satu papan pengembangan mikrokontroler</p><br />
+                                            <h2 class="ez-toc-section" id="papan-mikrokontroler-yang-digunakan-pada-robot-disebut-a-sensor-b-motor-c-arduino-d-manipulator%e2%80%8b">
+                            21. Papan mikrokontroler yang digunakan pada robot disebut A. sensor B. motor C. arduino D. manipulator​</h2><br />
+                        <p><strong>j</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong></p><p><strong>b</strong><strong> </strong><strong>m</strong><strong>o</strong><strong>t</strong><strong>o</strong><strong>r</strong><strong> </strong></p><p>penjelas : </p><p>semonga jawananya terbaik </p><br />
+                                            <h2 class="ez-toc-section" id="arduino-adalah-pemrograman%c2%a0procesing%c2%a0yang-memiliki-fungsi%c2%a0void-loop%c2%a0void-loop%c2%a0memiliki-makna%e2%80%a6-asemua-kode-akan-dibaca-berulang-kali-terus-menerus-oleh-arduinobb">
+                            22. arduino adalah pemrograman procesing yang memiliki fungsi void loop(), void loop() memiliki makna….asemua kode akan dibaca berulang kali (terus menerus) oleh arduinobbeberapa kode akan dibaca sekali oleh arduinocsemua kode akan dibaca satu kali oleh arduinodbeberapa kode akan dibaca berulang kali oleh arduino​</h2><br />
+                        <p>a. semua kode (yang ada didalam blok fungsi loop) akan dibaca berulang kali (terus menerus) oleh arduino</p><p></p><p>Semoga jawaban ini membantu</p><br />
+                                            <h2 class="ez-toc-section" id="sensor-apakah-yang-fungsinya-seperti-mata">
+                            23. sensor apakah yang fungsinya seperti mata?</h2><br />
+                        Sensor Cahaya, seperti LDR, Fotodiode dan semisalnya<br />
+                                            <h2 class="ez-toc-section" id="fungsi-sensor-sensor-pada-mesin-efi">
+                            24. fungsi sensor sensor pada mesin efi? </h2><br />
+                        untuk mendeteksi keadaan mesin mulai dari bukaan throtle gas,suhu mesin ,kevakuman pada intake manifold Dan lain sebagainya<br /><br /><br /><br />Semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-sensor-kelembaban">
+                            25. fungsi dari sensor kelembaban</h2><br />
+                        mengatur kelembaban udara dan mengatur suhu udara kalo ga slah <br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-kegunaan-dari-fungsi-setup-2-sebutkan-kegunaan-dari-fungsi-loop-3-apa-yang-dimaksud-dengan-variabel-sebutkan-juga-3-contohnya-pada-program-arduino-4-apa-yang-dimaksud-dengan-konsta">
+                            26. 1. Sebutkan kegunaan dari fungsi Setup() 2. Sebutkan kegunaan dari fungsi Loop() 3. Apa yang dimaksud dengan variabel, sebutkan juga 3 contohnya pada program arduino 4. Apa yang dimaksud dengan konstanta, sebutkan juga 3 contohnya pada program arduino 5. Apa yang dimaksud dengan fungsi (Function) pada program arduino, sertakan contoh cara pembuatan dan pemanggilan suatu fungsi.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.Struktur ini berguna untuk menginisialisasi variabel, mode pin, memulai menggunakan library, dll. Fungsi pengaturan hanya akan berjalan sekali, yaitu setiap powerup atau restart board Arduino.</p><p>Contoh</p><p></p><p>  Serial.begin(9600);</p><p>  pinMode(buttonPin, INPUT);</p><p></p><p>2.Loop()</p><p>Setelah menggunakan fungsi setup() yang menginisialisasi dan menetapkan nilai awal, fungsi loop() berguna untuk melaksanakan / mengeksekusi perintah program yang telah dibuat. Fungi ini akan secara aktif mengontrol board Arduino baik membaca input atau merubah output.</p><p></p><p>Contoh</p><p></p><p>const int buttonPin = 3;</p><p></p><p>// inisialisasi serial dan tombol</p><p>void setup()</p><p></p><p></p><p>3.Variabel</p><p></p><p>Variabel adalah nama yang dibuat dan disimpan di dalam memori mikrokontroller. Variabel ini mempunyai nilai dan nilainya dapat diubah sewaktu-waktu pada saat program dijalankan. Misalnya suatu variabel bernama “lampu1”. Variabel ini merupakan suatu nilai yang memiliki tipe data tertentu. Nilai dalam variabel “lampu1” dapat diubah, misalnya variabel “lampu1” mula-mula bernilai 0, kemudian dalam suatu proses, variabel “lampu1” dapat berubah menjadi bernilai 1. Nilai 0 dan 1 adalah tipe data dalam variabel “lampu1”.</p><p></p><p>Contoh lainnya, misalnya kita mendeklarasikan suatu variabel bernama “cacah”, kemudian ditentukan tipe data adalah byte. Maka program akan membuat suatu variabel “cacah” dan memberikan tipe data “cacah” sebagai bilangan byte dan menyimpannya ke memori. Artinya “ variabel “cacah” hanya dapat menghitung dari 0 hingga 255 ( 8 bit).</p><p></p><p>Deklarasi suatu variabel dapat dilakukan tanpa pemberian nilai awal atau dapat juga langsung diberikan nilai awal. Misalnya jika kita mendeklarasikan variabel “hitung” sebagai bilangan bulat (integer) dengan nilai awal 1 maka dapat ditulis :</p><p></p><p>int hitung = 1;</p><p>maka mikrokontroller akan membuat sebuah variabel “hitung” dengan tipe data integer (bilangan bulat) dan memberikan nilai awal 1 ke variabel “hitung” tersebut.</p><p></p><p>Dalam pemograman mikrokontroller dikenal ada 2 macam variabel yaitu :</p><p></p><p>1. Variabel global; yaitu variabel yang dideklarasi diluar fungsi dan berlaku secara umum atau dapat diakses dimana saja</p><p></p><p>2. Variabel lokal; yaitu variabel yang dideklarasi di dalam fungsi dan hanya dapat diakses oleh pernyataan yang ada di dalam fungsi.</p><p></p><p> </p><p></p><p>Tipe Data</p><p></p><p>Tipe data yang dapat digunakan di dalam program sketch bermacam-macam antara lain:</p><p></p><p>1. boolean</p><p></p><p>Tipe data boolean hanya memiliki 2 data yaitu benar (true) dan salah (false). Tipe data boolean hanya membutuhkan 1 byte memori. Contoh penulisan deklarasi tipe data boolean.</p><p></p><p>boolean running = false;</p><p>Artinya: variabel “running” ditentukan mempunyai tipe data boolean dengan nilai awal “false”.</p><p>2.byte</p><p>Tipe data byte memiliki 8 bit data (0 – 255). Tipe data byte tidak memiliki nilai negatif. Contoh penulisan deklarasi tipe data byte :</p><p></p><p>byte b = 128;</p><p>atau</p><p></p><p>byte b = B10000000;</p><p>Artinya variabel “b” ditentukan sebagai tipe daya byte dengan nilai awal 128 (decan) atau B10000000.</p><p></p><p></p><p>4.Konstanta</p><p></p><p>Konstanta adalah nilai suatu besaran yang tidak berubah besarnya atau memiliki nilai yang tetap. Dalam pemograman arduino ditulis dengan kata “const” yang artinya konstanta. Contoh penulisan konstanta :</p><p></p><p>const int harga = 12;</p><p>artinya variabel “harga” adalah sebuah konstanta bilangan bulat integer yang memiliki nilai tetap yaitu 12. Nilai ini hanya bisa dibaca dan tidak dapat diubah selama program dijalankan.</p><p></p><p>Penamaan untuk variabel dan konstanta tidak boleh menggunakan kata-kata yang digunakan dalam program sketch arduino seperti for, if, while dan sebagainya. Selain itu nama tidak boleh ada spasi, bila hendak memisahkan 2 buah kata untuk menyatakan variabel atau konstanta harus dihubungkan dengan tanda garis bawah ( _ ) misalnya : “waktu_tunggu”.</p><p></p><p> </p><p>5.</p><p>Bahasa Pemograman Arduino</p><p>Bahasa pemrograman Arduino pada dasarnya menggunakan bahasa pemograman C. Bahasa C sendiri merupakan bahasa tingkat tinggi yang sangat populer dan banyak digunakan oleh para programmer. Dengan demikian aturan penulisan dan penggunaan dari bahasa Arduino akan sama dengan bahasa C. Untuk mempelajari lebih jauh lagi bahasa pemograman Arduino dan perintah-perintah apa saja yang ada pada bahasa pemrograman Arduino kamu bisa membuka disitus resmi Arduino Reference atau mengaksesnya dalam bentuk aplikasi android kamu bisa download Arduino Language Reference. </p><p>Structure program</p><p></p><p>structure</p><p></p><p>Srtuktur dasar bahasa pemrograman Arduino sangat sederhana hanya terdiri dari dua bagian. Dua bagian tersebut dapat juga disebut sebagai fungsi utama yaitu setup() dan loop(). </p><p>void setup( )</p><p>{</p><p>  //Statement;</p><p>}</p><p></p><p>void loop( )</p><p>{</p><p>  //Statement;</p><p>}</p><p>dimana setup() adalah bagian untuk inisialisasi yang hanya dijalankan sekali di awal program, sedangkan loop() untuk mengeksekusi bagian program yang akan dijalankan berulang-ulang untuk selamanya. </p><p></p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah ya gan.</p><p>jangan lupa follow dan jawaban tercerdas.</p><p>ini mapel kelas berapa.</p><p>kalau jawabannya kurang tepat maaf ya soalnya aku baru kls 7</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-dari-sensor">
+                            27. apakah fungsi dari sensor?</h2><br />
+                        menutup hal yg tidak enak di lihat / agar anak kecil tidak mengerti<br />
+                                            <h2 class="ez-toc-section" id="analisilah-fungsi-sensor-dalam">
+                            28. Analisilah fungsi sensor dalam </h2><br />
+                        Alat untuk merekam objek permukaan bumi pada wilayah-wilayah tertentu yang di inginkan<br /><br />Semoga membantu!!!<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-instuksi-arduino%e2%80%8b">
+                            29. apa fungsi instuksi arduino​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Arduino adalah pengendali mikro single-board yang bersifat sumber terbuka, diturunkan dari Wiring platform, dirancang untuk memudahkan penggunaan elektronik dalam berbagai bidang. Perangkat kerasnya memiliki prosesor Atmel AVR dan softwarenya memiliki bahasa pemrograman sendiri.</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi-ground-pada-perangkat-arduino">
+                            30. Tuliskan fungsi ground pada perangkat arduino</h2><br />
+                        Definisi grounding adalah sistem pentanahan yang berfungsi untuk meniadakan beda potensial sehingga jika ada kebocoran tegangan atau arus akan langsung dibuang ke bumi. Dalam sistem elektronika ground berarti sebuah titik referensi umum atau tegangan potensial sama dengan “tegangan nol”.<br />
+                                            <h2 class="ez-toc-section" id="arduino-adalah-suatu%c2%a0microcontroller%c2%a0atau-sebuah-sistem-komputer-yang-fungsional-dalam-sebuah%c2%a0chip%c2%a0yang-di-dalamnya-sudah-ada%c2%a0processor-memory%c2%a0dll-yang-termasuk-arduino">
+                            31. Arduino adalah suatu microcontroller atau sebuah sistem komputer yang fungsional dalam sebuah chip yang di dalamnya sudah ada processor, memory dll. Yang termasuk Arduino di bawah ini kecuali…..AArduino Mega BArduino Uno CArduino Nano DArduino One ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D. Arduino One</p><p>Semoga membantu :)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-sensor-dalam-kamera%e2%80%8b">
+                            32. fungsi sensor dalam kamera​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Sensor pada kamera berfungsi untuk menangkap informasi berupa gambar dan menyimpannya di memory card. Pada masa analog, fungsi perekaman ini merupakan fungsi dari pita seluloid. ... Nah, sensor ini sendiri memiliki aneka ragam ukuran yang menentukan besarnya gambar yang terekam.</strong></p><p><strong>Penjelasan:</strong></p><strong>semoga</strong><strong> membantu</strong>pertanyaan : fungsi sensor dalam kamera : jawaban :sensor pada kamera berfungsi untuk menangkap informasi berupa gambar dan menyimpannya di memory card . pada masa analog , fungsi perekaman ini merupakan fungsi dari pita seluloid ..... nah, sensor ini sendiri memiliki aneka ragam ukuran yang menentukan besarnya gambar yang terekam <p></p>mengkoversi / mengubah cahaya yang ditangkap menjadi data digital yang akan kita lihat sebagai gambar / foto di layar jadikan jawaban tecerdas like jawaban ini juga follow achyarAlfath5 <p>[tex]semoga \: membantu[/tex]</p>maaf kalo salah kak <p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-sensor-pada-robot">
+                            33. apa fungsi sensor pada robot?</h2><br />
+                        untuk mengetahui/merangsang sesuatu...sensor pun ada yang beragam,seperti sensor api dll<br />
+                                            <h2 class="ez-toc-section" id="fungsi-sensor-pada-gambar-adalah%e2%80%8b">
+                            34. fungsi sensor pada gambar adalah?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sensor pada kamera berfungsi untuk menangkap informasi berupa gambar dan menyimpannya di memory card. Pada masa analog, fungsi perekaman ini merupakan fungsi dari pita seluloid. ... Nah, sensor ini sendiri memiliki aneka ragam ukuran yang menentukan besarnya gambar yang terekam</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-trainer-kit-arduino">
+                            35. Apa fungsi trainer kit Arduino </h2><br />
+                        Trainer Kit Arduino ini sangat cocok dipakai untuk pembelajaran Arduino. Membuat aplikasi dan proyek Arduino juga menjadi mudah karena sudah tersedia berbagai sensor dan komponen pendukung Arduino. <br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-reseptor-sensori">
+                            36. fungsi dari reseptor sensori</h2><br />
+                        Fungsi sel saraf sensorik adalah menghantar impuls dari reseptor ke sistem saraf pusat, yaitu otak (ensefalon) dan sumsum belakang (medula spinalis). Ujung akson dari saraf sensori berhubungan dengan saraf asosiasi (intermediet). <br /><br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-bagian-bagian-arduino-%e2%80%8b">
+                            37. sebutkan fungsi bagian bagian Arduino ​</h2><br />
+                        <p><strong>Arduino memiliki bagian bagian yang berfungsi sebagai berikut:
+</strong></p><p><strong>Port USB dan Power Jack  </strong></p><p><strong>Port USB ini berfungsi untuk menyuplai sumber daya dari sebuah komputer serta mengupload kode ke Arduino.
+</strong></p><p><strong>Pin Sumber Daya  </strong></p><p><strong>Pin ini mempunyai fungsi yang krusial, lantaran pin inilah yang selaku interface dengan perangkat lainnya, serupa aktuator atau sensor.
+</strong></p><p><strong>Regulator Tegangan  </strong></p><p><strong>
+</strong></p><p><strong>Regulator tegangan ini mepunyai fungsi yaitu selaku pelindung gerbang yang berarti ia akan menyalurkan tegangan terlegulasi ke Arduino dan melepaskan tegangan overaktif.
+</strong></p><p>
+</p>Pembahasan
+<p>Haloo adik adik yang ganteng ganteng dan cantik cantik balik lagi nih sama kakak kece. Gimana kabar kalian? Insyaallah sehat sehat terus yaa. Kali ini kakak a1m akan mencoba membantu menjawab pertanyaan ini ya, kuy deh dibaca pelan pelan biar masuk hati
+</p><p>
+</p><p>Arduino merupakan pengendali mikro single-board yang bersifat terbuka, diturunkan dari sebuah Wiring platform, didesain untuk meringankan penggunaan elektronik dalam berbagai bidang. Perangkat kerasnya memiliki prosesor Atmel AVR dan softwarenya juga mempunyai bahasa pemrograman sendiri.
+</p><p>
+</p><p>A. Port USB dan Power Jack  </p><p>
+</p><p>Port USB ini berfungsi untuk menyuplai sumber daya dari sebuah komputer serta mengupload kode ke Arduino. Tipe USB yang dimanfaatkan adalah tipe B standar dan ujung satunya tipe A standar. Tidak hanya dari USB, sumber daya dapat disuplay dari baterai sembilan volt atau dapat juga melintasi power jack yang disambungkan langsung dengan soket listrik rumah melintasi adaptor DC duabelas volt.  </p><p>
+</p><p>B. Chip Utama / Mikrokontroler  </p><p>Chip (atau Integrated Circuit) Inilah otak atau pusat dari Arduino.  </p><p>
+</p><p>C. LED Indikator Daya  </p><p>LED indikator daya ini yang berlabel ‘ON’ akan menyala ketika Arduino sedang beroperasi.
+</p><p>
+</p><p>D. LED Indikator Transfer Data  </p><p>Ada dua jenis LED, yaitu TX (transmit) dan RX (receive). Kedua LED ini akan berkedip untuk memberitahukan telah terjadi komunikasi serial berupa pengiriman atau penerimaan data.  </p><p>E. Pin Sumber Daya  </p><p>Pin ini mempunyai fungsi yang krusial, lantaran pin inilah yang selaku interface dengan perangkat lainnya, serupa aktuator atau sensor. Digunakan kabel jumper untuk menyambungkan diantara Arduino dan perangkat lain.
+</p><p>
+</p><p>
+</p><p>F. Pin Analog  </p><p>pin analog Semuanya hanya bersifat input dan pin ini digunakan untuk menerima sinyal analog, misalnya, sensor suhu.  </p><p>
+</p><p>G. Pin Digital  </p><p>Pada Arduino Uno, terdapat 14 pin digital yang digunakan untuk input atau output dari ke perangkat digital. Contohnya ialah input dari sensor gerak atau output ke lampu LED.  </p><p>
+</p><p>H. Tombol Reset  </p><p>Ketika tombol reset ini ditekan selama beberapa detik, maka Arduino akan mengulang program dari awal. Ini dilakukan jika tidak memiliki fungsi perulangan pada kode yang telah diunggah ke Arduino atau jika kesalahan terjadi.
+</p><p>
+</p><p>I. Regulator Tegangan  </p><p>
+</p><p>Regulator tegangan ini mepunyai fungsi yaitu selaku pelindung gerbang yang berarti ia akan menyalurkan tegangan terlegulasi ke Arduino dan melepaskan tegangan overaktif. Akan tetapi tentu saja ada pemisahnya, jangan sampai menyalurkan tegangan lebih dari duapuluh volt karena akan membakar rangkaian Arduinonya.
+</p><p>
+</p><p>Demikian lah penjabaran dari kakak, semoga dengan ilmu yang sedikit ini dapat bermanfaat untuk adik adik semua.
+</p><p>
+</p><p>
+</p><p>Jangan lupa terus berusaha dan berdoa.
+</p>Pelajari lebih lanjut
+<p>1. Jelaskan tentang arduino
+</p><p>https://brainly.co.id/tugas/18075276
+</p><p>2. Bagaimana arduino bekerja pada suatu sistem kendali elektronik?
+</p><p>https://brainly.co.id/tugas/18949292
+</p><p>3. Fungsi arduino nano
+</p><p>https://brainly.co.id/tugas/26525451
+</p>Detil jawaban
+<p>Kelas:  10 SMA
+</p><p>Mapel: TIK
+</p><p>Bab: Bab 6 - Mengenal Pemrograman Komputer
+</p><p>Kode: 10.11.2006
+</p><p>Kata kunci:  Arduino, Pemograman, Komputer
+</p><p>#AyoBelajar
+</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-membuat-program-agar-3-sensor-ultrasonik-terhubung-ke-arduino-dan-menghasilkan-output-buzzer-dengan-suara-berbeda-dari-setiap-sensor">
+                            38. Cara membuat program agar 3 sensor ultrasonik terhubung ke arduino dan menghasilkan output buzzer dengan suara berbeda dari setiap sensor?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Alat yang digunakan berupa Sensor Ultrasonik HC-SR04 yang
+</p><p>berfungsi untuk mendeteksi jarak objek dengan memberikan keluaran atau output
+</p><p>berupa bunyi Buzzer apabila sensor mendeteksi jarak objek dan LED sebagai
+</p><p>penanda berfungsi atau tidaknya sensor dengan rangkaian Mikrokontroler.
+</p><p>Penelitian ini menggunakan Arduino Uno sebagai Mikrokontroler. Dari hasil
+</p><p>pengujian semua komponen alat, dapat disimpulkan bahwa keseluruhan sistem
+</p><p>bekerja dan berfungsi sesuai dengan rancangan sistem. Manfaat dari sistem ini
+</p><p>yaitu memudahkan seseorang untuk menerapkan Physical Distancing di tempat
+</p><p>ramai dengan bantuan teknologi IT serta menambah wawasan tentang pentingnya
+</p><p>menjaga kesehatan. </p><p>Semoga membantu</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagian-arduino-yang-berfungsi-untuk-koneksi-input-atau-output-adalah">
+                            39. Bagian arduino yang berfungsi untuk koneksi input atau output adalah ...</h2><br />
+                        <p>Pin Input/Output Digital, berfungsi untuk membaca nilai logika 1 dan 0 atau mengendalikan komponen output lain seperti LED, relay, atau sejenisnya. Pin ini termasuk paling banyak digunakan saat membuat rangkaian.</p><p></p><p>Untuk pin yang berlambang “~” artinya dapat digunakan untuk membangkitkan PWM (Pulse With Modulation) yang fungsinya bisa mengatur tegangan output. Biasanya digunakan untuk mengatur kecepatan kipas atau mengatur terangnya cahaya lampu.</p><br />
+                                            <h2 class="ez-toc-section" id="arduino-adalah-pemrograman%c2%a0procesing%c2%a0yang-memiliki-fungsi%c2%a0void-setup%c2%a0void-setup%c2%a0memiliki-makna%e2%80%a6-abeberapa-kode-di%c2%a0void-setup%c2%a0akan-dibaca-sekali-oleh-ard">
+                            40. Arduino adalah pemrograman procesing yang memiliki fungsi void setup(), void setup() memiliki makna….Abeberapa kode di void setup akan dibaca sekali oleh arduinoBbeberapa kode di void setup akan dibaca sekali oleh arduinoCsemua kode di void setup akan dibaca sekali oleh arduinoDsemua kode di void setup akan dibaca berulang kali oleh arduino​</h2><br />
+                        <p></p><p>c</p><p><strong>Penjelasan:</strong></p> fungsi <strong>void set up</strong>() dijalankan pada saat sketch atau program Arduino mulai. Jadi, semua program di <strong>void</strong> <strong>setup()</strong><strong> </strong>hanya akan dijalankan sekali atau saat di restart.<p></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/q9UCSynDEw8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>fisika</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/judul-skripsi-tata-busana-unj.html">Judul Skripsi Tata Busana Unj</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-cerdas-cermat-tentang-koperasi.html">Kumpulan Soal Cerdas Cermat Tentang Koperasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-ips-smp-kelas-7-8-9.html">Kumpulan Soal Ips Smp Kelas 7 8 9</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-soal-p3k.html">Kisi Kisi Soal P3k</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-ukg-sd.html">Kisi Kisi Ukg Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/bahasa-inggris-kisi-kisi-sma-kelas-x.html">Bahasa Inggris Kisi kisi Sma Kelas X</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-seleksi-ppg-dalam-jabatan-akidah-akhlak.html">Kisi Kisi Seleksi Ppg Dalam Jabatan Akidah Akhlak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/judul-skripsi-accounting.html">Judul Skripsi Accounting</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/judul-skripsi-yang-cocok-untuk-it.html">Judul Skripsi Yang Cocok Untuk It</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-instrumen-hasil-belajar-praktikum.html">Kisi Kisi Instrumen Hasil Belajar Praktikum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/apa-yang-dimaksud-dengan-thawaf-jelaskan.html">Apa Yang Dimaksud Dengan Thawaf Jelaskan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/judul-makalah.html">Judul Makalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/judul-skripsi-tentang-pelayan-publik.html">Judul Skripsi Tentang Pelayan Publik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-ipa-unbk-smp-2020.html">Kisi Kisi Ipa Unbk Smp 2020</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-pkn-kelas-7-bab-keanekaragaman-suku-ras-antargolongan.html">Kumpulan Soal Pkn Kelas 7 Bab Keanekaragaman Suku Ras Antargolongan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/contoh-judul-skripsi-penelitian-sosial.html">Contoh Judul Skripsi Penelitian Sosial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-persamaan-kuadrat-matematika-dasar-sbm.html">Kumpulan Soal Persamaan Kuadrat Matematika Dasar Sbm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-dan-kartu-soal-kimia-kls-10-semester-2.html">Kisi Kisi Dan Kartu Soal Kimia Kls 10 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-sejarah-minat-kelas-x.html">Kisi Kisi Sejarah Minat Kelas X</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-soal-bahasa-jepang-sma.html">Kisi Kisi Soal Bahasa Jepang Sma</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediailmu.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediailmu.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediailmu.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediailmu.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediailmu.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

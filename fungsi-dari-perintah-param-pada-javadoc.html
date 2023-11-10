@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Perintah Param Pada Javadoc - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Perintah Param Pada Javadoc, , , , , , , 0, , , , , , 0, fungsi-dari-perintah-param-pada-javadoc, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Perintah Param Pada Javadoc - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Perintah Param Pada Javadoc, , , , , , , 0, , , , , , 0, fungsi-dari-perintah-param-pada-javadoc, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Perintah Param Pada Javadoc - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Perintah Param Pada Javadoc, , , , , , , 0, , , , , , 0, fungsi-dari-perintah-param-pada-javadoc, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediailmu.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediailmu.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediailmu.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediailmu.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediailmu.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediailmu.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediailmu.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediailmu.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediailmu.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediailmu.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Perintah Param Pada Javadoc</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Devicamelbachira1</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Perintah+Param+Pada+Javadoc" alt="Fungsi Dari Perintah Param Pada Javadoc">
+                    </div>
+                    <p></p>
+                    <p>inilah cara menggunakan param cair spesial.
+pada kata&#039;&#039;param&#039;&#039; kalimat di atas adalah
+buruan ya penting....</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#inilah-cara-menggunakan-param-cair-spesial-pada-kataparam-kalimat-di-atas-adalahburuan-ya-penting">1.
+                                            inilah cara menggunakan param cair spesial.
+pada kata''param'' kalimat di atas adalah
+buruan ya penting....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-salep-param-pilis-dan-tapal">2.
+                                            pengertian salep, param, pilis, dan tapal</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#petunjukan-pemakaian-param-cair-spesial-1-kocok-dahulu-isi-botol-sebelum-dibuka-2-bukalah-tutup-botol-dengan-cara-menekan-tutup-botolputar-ke-kiri3-ambil-tutup-botol-dengan-pelan-agar-tidak-tum">3.
+                                            petunjukan pemakaian param cair spesial 
+1).kocok dahulu isi botol sebelum dibuka 
+2).bukalah tutup botol dengan cara menekan tutup botol,putar ke kiri
+3).ambil tutup botol dengan pelan agar tidak tumpah
+4).{.....}
+5).tutuplah botol dengan menekan tutup botol,putar ke kanan 
+petunjuk pemakaian param cair spesial dilengkapi dengan kalimat
+A.tuangkan param dimangkuk kecil,diamkan beberapa jam
+B.ambil param secukupnya,lalu oleskan pada bagian tubuh yang pegal
+C.ambil param sebanyak mungkin,lalu oleskan pada bagian tubuh yang pegal 
+D.tuangkan param dengan kanan kiri ditelapak tangan kanan hingga tumpah </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">4.
+                                            jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kegiatan-6-3-menyimpulkan-isi-teks-cerita-inspiratif-1-bacalah-teks-cerita-inspiratif-berikut-orang-tua-yang-bijak-suatu-ketika-huchaplah-seorang-tua-yang-buak-pada-suatu-pagi-datanglah-seorang-an">5.
+                                            Kegiatan 6.3 Menyimpulkan Isi Teks Cerita Inspiratif 1 Bacalah teks cerita inspiratif berikut. Orang Tua yang Bijak Suatu ketika, huchaplah seorang tua yang buak. Pada suatu pagi, datanglah seorang anak muda yang sedang dirundung hanyak nasalah. Laugkabnya gonta dan air muka yang ruwet Tame itu, memang tampak seperti orang yang tidak bahagia Tanpa membuang waktu, ing itu menceritakan semua masalahnya. Pak Tua yang bijak hanya mendengarkannya dengan saksana In lalu mengambil segenggam garam dan meminta tamunya untuk mengambil segelas air Dabarkannya garam itu ke dalam gelas lalu disshuknya perlahan Colm, animan ini, dan katakan bagaimana na ujar Pak Tra itu. "Tabit. Pahit sekall," jawab Anak Muda tersebut, sunbil meludah ke samping Pak Tim it, sedikit tersenyum. In, lalu mongsjaktarostya im sntuk berjalan ke tepi telaga di dalam hutan dekat tempat tinggalnya Koda orang itu berjalan berdampingan, dan akhirnya sampailah mereka ke tepi telaga yang tenang In. Pak Tua im talu kembali metaburkan segenggam param, ke dalam teto stu. Dengan sepoteag kayu, dibuatnya pelombang Angaduk-aduk dan tercipta riak ent, ineguak betenangan telaga itu. "Coba, ambil air dari telaga ini, dan Saat Anak Muda ir selesai mereguk aet Pak Tha berkata lagi, "Bagaimana Segar," ujr Anak Muda im "Apakah kamu merasakan parain of dalam air ita?" tanya Pak Tua lagi, "Tidak," jawab Anak Muda terschg Dengan bijak. Pak Tuaitumenepuk nepuk pregung si Anak Muda, la lalu mengajakma duduk berhadapan, bersimpul di samping telaga in "Anak Muda, dengarlah Pahuya kehidupan, adalah layaknya segenggang tidak lebih dan tidak kurang Jumlah dan tag pahit itu adalah sama, dan memang akan tetap sama. Tapi, kepahitan yang kita rasakan, akan sangat tergantung dari wadah yang kita mela Kepahitan im, akan didasarkan dari perasiat tempat kita meletakkan segalanya. tu semua akan tergantung pada hati kita. Jadi, sad kan merasakan kepahitan dan kegagalan dalam hidup, hanya ada satu hal yang bisa kama lakukan. Lapangkanlah dadamu menerima semuanya. Luaskanlah hatimu untuk me nampang setiap kepahitan itu," ujar Pak Tus Pak Tua itu lalu kembali memberika ansihat Hatunu, adalah wadah itu. Pe rasaunu adalah tempat itu. Kalbumo, adalah tempat kamu menampung segalanys Jadi, jangan jadikan hatima itu seperti pelas buatlah laksana telaga yang mampu mereka setiap kepahitan itu dan merubahnyn incujed kesegaran dan kebahagiaan," jelas Pak Thi kembali Keduanya lalu beranjak pulang, Mereka sama-sama belajar han itu. Pak J pun kembali menyimpan "segenggam garam, unnik anak muda yang lain, yang sering dating pidanya membawa keresahan jiwit. Sumber siteligationis folyta No. 1 1 3₁ 4. Teks Cerita Inspiratif Ungkapan Simpati Ungkapan Empati Perasaaan Pribadi Kepedulian Simpulan Presentasikanlah hasilnya di depan Ungkapan dalam teks inspiratil melipu à. Ungkapan Simpati Ungkapan simpati dalah keikur merasakan perasaan (senang, sedih) orang lain. h. Kepedulian Kepedulian adalah sikap mengir (memprihatinkan) sesuatu yang E masyarakat Uji Kemampuan 6.2 1. Diskusikanlah bersama teman 2. Carilah sebuah teks cerita insp 3. Tentukanlah ungkapan simpa dari teks cerita inspiratif terse 4. Buatlah simpulan dari isi teks 5. Presentasikan jawabanmu di Menelaah Struk dan Isi Teks Ceri 1. Menelaah Struktur Te Kamu telah mengetahui pengertian temukan lah orientasi, komplikasi, resolusi,dan reorientasi pada cerita tersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-isilah-dengan-jawaban-yang-benar-paragraf-berikut-untuk-soal-nomor-1-5-setiap-anak-memiliki-hak-untuk-mendapatkan-pendidikan-termasuk-anak-jalanan-kondisi-tersebut-menjadi-alasan-yayasan-pember">6.
+                                            B. Isilah dengan jawaban yang benar! Paragraf berikut untuk soal nomor 1-5. Setiap anak memiliki hak untuk mendapatkan pendidikan, termasuk anak jalanan. Kondisi tersebut menjadi alasan Yayasan Pemberdayaan Rakyat Miskin (Param) mendirikan sekolah bagi anak jalanan bernama Sekolah Alternatif Anak Jalanan (SAAJ), SAAJ merupakan alternatif pendidikan bagi anak-anak jalanan ataupun anak- anak dari keluarga prasejahtera. SAAJ menerapkan kegiatan belajar- mengajar setiap Senin hingga Jumat dan kegiatan ekstrakurikuler setiap Sabtu. Pembelajaran dimulai pada pukul 11.00-17.00 WIB. Anak- anak jalanan belajar secara bergantian di ruang kelas yang sama. Anak-anak jalanan belajar membaca dan menghitung. Selain itu, mereka belajar Pancasila, lagu nasional, dan pendidikan agama Islam. 1. Informasi tentang hak anak mendapatkan pendidikan terdapat pada kalimat.. paragraf kesatu, 2. membangun.asa.anak-anak jalanan lewat. pendidikan?page=all, diakses 9 Agustus 2021 3. Informasi pada kalimat kedua paragraf kedua dapat ditanyakan dengan kata tanya.... Informasi pada kalimat ketiga paragraf pertama dapat ditanyakan dengan kata tanya.... 4. Paragraf kedua memuat informasi penting mengenai... SAAJ. 5. Fakta mengenai pembelajaran yang diberikan terdapat pada paragraf kedua kalimat....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#param-masyarakat-di-bidang-ekonomi-dalam-contoh-implementasi">7.
+                                            Param Masyarakat di Bidang Ekonomi Dalam Contoh Implementasi  </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pendidikan-agama-hindu-dan-budi-pekerti1-setelah-memahami-tentang-isi-kitab-bhagawadgita-buatlah-pendapat-kalian-mengenai-isi-dari-18-bab-yang-ada-dalam-kitab-bhagawadgita-contoh-babpendapatbab">8.
+                                            Pendidikan agama hindu dan budi pekerti!1.	setelah memahami tentang isi kitab bhagawadgita, buatlah pendapat kalian mengenai isi dari 18 bab yang ada dalam kitab bhagawadgita !contoh :bab	pendapat	bab	pendapati	x	:ii	xi	:iii	xii	:iv	xiii	:v	xiv	:vi	xv	:vii	xvi	:viii	xvii	:ix	xviii	:2.	tulislah arti dan nilai-nilai yang perlu dipahami dan laksanakan dalam kehidupan sehari-hari !"indriyanni paranny ahurindriyebhyah param manahmanasas tu para buddhiryo buddeh paratas tu sah"artinya:…………………………………………………………………………………………………………………………………………………………………</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#24-bahan-lunak-buatan-yang-mempunyai-wujud-padat-lunak-yang-memiliki-aneka-warna-cerah-danmengeras-pada-saat-pengeringan-adalah-a-fiberglassb-polymer-clayc-paramd-gips%e2%80%8b">9.
+                                            24. Bahan lunak buatan yang mempunyai wujud padat lunak yang memiliki aneka warna cerah danmengeras pada saat pengeringan, adalah...A. FiberglassB. Polymer ClayC ParamD. Gips​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tapah-param-krtayuge-tretayam-jnananucyate-dvapare-yajnam-ityacurddnama-ekam-kalau-yuge-terjemahan-pelaksanaan-penebusan-dosa-yang-ketat-tapa-merupakan-kebajikan-pada-masa-satyayuga-pengetahuan">10.
+                                            Tapah param krtayuge tretayam jnananucyate, dvapare yajnam ityacurddnama ekam kalau yuge. Terjemahan : Pelaksanaan penebusan dosa yang ketat (tapa) merupakan kebajikan pada masa Satyayuga; pengetahuan tentang sang diri (jnana) pada Tretayuga, pelaksanaan upacara kurban keagamaan (yajna) pada masa Dwaparayuga, dan melaksanakan amal sedekah (danam) pada masa Kaliyuga (Parasara Dharmasastra I.23). Dari uraian sloka di atas, jelaskan maksud dari isi sloka tersebut !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">11.
+                                            jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#join-the-leaguematcri-himpunandateparamsuau-ucas-tordnect-26siswa-gemarmptomatica20-siswa-gemorabanasgemor-bahasa-indonesia10-siswa-gomar-clowanyo-15-siswatidos-gomar-urdhansa%d0%b0-a-gambarcan-dia">12.
+                                            JOIN THE LEAGUEmatcri himpunanDate:paramSuau ucas tordnect 26siswa gemarmptomatica20 siswa gemorabanasgemor bahasa Indonesia,10 siswa gomar clowanyo 15 siswatidos gomar urdhansaА A. Gambarcan diagram  ven di atas​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-ya-untuk-eksperimen-biologikalau-misalnya-cara-untuk-mengetes-isi-obat-tablet-seperti-paramxultrflu-itu-kira-kira-prosedur-nya-gimana-yaya-memang-sih-udah-ada-list-komposisi-nya-tap">13.
+                                            tolong bantu ya untuk eksperimen biologi
+kalau misalnya cara untuk mengetes isi obat tablet seperti param*x/ultr*flu itu kira kira prosedur nya gimana ya?
+ya memang sih udah ada list komposisi nya tapi ini buat eksperimen nya jadi disuruh nya menjelaskan cara mengetahui kalau obat tablet (misalnya p*ramex) itu isinya apa
+tks.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">14.
+                                            jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yg-bukan-merupakan-contoh-pengolahan-jahe-adalah-a-dibuat-menjadi-wedang-jaheb-dibuat-menjadi-permen-jahec-dibuat-menjadi-paramd-dibuat-menjadi-hiasan%e2%80%8b">15.
+                                            Yg bukan merupakan contoh pengolahan jahe adalah... A. Dibuat menjadi wedang jaheB. Dibuat menjadi permen jaheC. Dibuat menjadi paramD. Dibuat menjadi hiasan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membeli-jeruk-dipasar-5kg-can-ibu-juga-memba-ikan-sebanyak-5kg-berapa-jumlah-barat-total-belanja-ibu-a-pasar-ayatakan-param-satuan-kg-keneal-gan-gram%e2%80%8b">16.
+                                            membeli jeruk dipasar 5kg can ibu juga memba ikan sebanyak 5kg berapa jumlah barat total belanja ibu a pasar ayatakan param Satuan Kg keneal, gan gram​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tanaman-obat-yang-digunakan-sebagai-param-untuk-anggota-badan-yang-terkilir-adalah">17.
+                                            tanaman obat yang digunakan sebagai param untuk anggota badan yang terkilir adalah...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tumbuhan-paku-berikut-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">18.
+                                            Jenis tumbuhan paku berikut yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah?...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#daun-cengkih-dapat-digunakan-sebagai-bahan-pembuat-a-paramb-maskerc-krim-pelembabd-krim-pemutihe-pelembab-bibir">19.
+                                            daun cengkih dapat digunakan sebagai bahan pembuat... A. ParamB. MaskerC. Krim pelembabD. Krim pemutihE. Pelembab bibir</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-jumlah-pemain-dalam-satu-tim-softball-adalah-orang12-sliding-palam-permainan-softball-amiah13softball-pertama-diperkindingkan-piinconesia-tahun-asa14silap-bapan-yg-benar-seleiah-memukul-logo-d">20.
+                                            11 jumlah pemain dalam satu tim softball adalah..... orang12 sliding palam permainan softball amiah13Softball pertama Diperkindingkan piinconesia tahun asa14Silap bapan yg benar Seleiah memukul LOGO Danm pamainan SoFl-boli aipaah..15bagian tubuh yg sebaiknya Digunakan untuk mattenkuih bess param permainan soetball apaiah1jelaskan langkahServis alas palam permainan bola voli mini2Heiskan perbepaan servis atas can servis mereceung Danam permainan bola voli mini3bagaimanakah bentuk pan ukuran lapangan Permalincan coftballAsebulkan macam Pellerakapan permainan softball yang digunakan oleh lim Penjaga5 5 wliskan langkahDaam maanak ng bola qorus palam permainan SoElba​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">21.
+                                            jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jamu-adalah-obat-yg-dibuat-dari-tumbuhan-obatbaik-dari-buahbungadauntangkaiakar-maupun-kulitnya-diperkirakan-ada-150-jenis-tumbuhan-yg-sudah-biasa-digunakan-sebagai-bahan-baku-jamu-konon-pada">22.
+                                            1.jamu adalah obat yg dibuat dari tumbuhan obat,baik dari buah,bunga,daun,tangkai,akar maupun kulitnya.diperkirakan ada 150 jenis tumbuhan yg sudah biasa digunakan sebagai bahan baku jamu .konon pada awalnya jamu hanya dikonsumsi oleh kalangan wanita istana kerajaan mataram ( abad ke17).agar mereka tetap cantik resep jamu dirahasiakan.namunsejak tahun 1930-an,sudah mulai dikembangkan jamu komersial,yg banyak dijajakan dikota kota jawa. pada mulanya jamu berbentuk serbuk,namun kini ada juga yg dikemas dalam bentuk tablet,kapsul,cairan,salep,param,pilis,dan tapal.butir butir pokok teks tersebut adalah....a.jamu adalah obat trasional berbahan tumbuhan yg sudah banyak dimanfaatkan orang.b.jamu adalah obat tradisional yg hanya dikonsumsi oleh kalangan wanita kerajaan.c.jamu adalah obat tradisional yg berkhasiat untuk merawat kecantikan wanita kerajaan.d.jamu adalah obat tradisional yg terbuat dari tumbuh tumbuhan yg hidup ditanah jawa .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%e0%b6%b1%e0%b7%9c%e0%b6%ad%e0%b6%9a%e0%b7%8f-%e0%b6%9a%e0%b6%ab-%e0%b6%b1%e0%b7%92%e0%b7%80%e0%b6%b1%e0%b6%ad%e0%b7%8a-%e0%b6%9a%e0%b6%bba-ran%e0%b6%bb%e0%b7%94-%e0%b6%9c%e0%b6%b8%e0%b6%ab%e0%b6%b8">23.
+                                            නොතකා කණ නිවනත් කරa ranරු ගමණම මතු බුදුබණශප්‍රමණය හැකිදනගරෙහි එraඳුන්aගේ ඒ පණගේසි. නි ණයගෙ a param ඡායාරෑක ළramණ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aturan-atau-disipin-moral-yang-di-rumuskan-atau-sengaja-di-buat-berdasarkan-kesepakatan-untuk-menciptakan-kondisi-masyarakat-yang-tertib-dan-damai-merupakan-sila-pakkati-silaparami-silapannat">24.
+                                            aturan atau disipin moral yang di rumuskan atau sengaja di buat berdasarkan kesepakatan untuk menciptakan kondisi masyarakat yang tertib dan damai merupakan sila . . . . *pakkati silaparami silapannatisilapativeda silapadati sila​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terdapat-dua-corak-batik-yang-dipakai-keluarga-kerajaanyaitu-param-dan-truntum-menurutmubagaimana-perbedaan-falsafa-kedua-corak-batik-tersebut%e2%80%8b">25.
+                                            terdapat dua corak batik yang dipakai.keluarga kerajaan,yaitu param dan truntum.menurutmu,bagaimana perbedaan falsafa kedua corak batik tersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-dijawab-ya-rangkumlah-hasil-teks-observasi-berikut-jamujamu-adalah-obat-yang-dibuat-dari-tumbuhan-obat-baik-dari-buah-bunga-dauntangkai-akar-maupun-kulitnya-diperkirakan-ada-sekitar-1">26.
+                                            tolong dijawab ya 
+rangkumlah hasil teks observasi berikut 
+Jamu
+Jamu adalah obat yang dibuat dari tumbuhan obat, baik dari buah, bunga, daun,
+tangkai, akar maupun kulitnya. Diperkirakan ada sekitar 150 jenis tumbuhan yang
+sudah biasa digunakan sebagai bahan baku jamu. Konon, pada awalanya jamu hanya
+dikonsumsi oleh kalangan wanita istana kerajaan Mataram (abad ke-17) agar mereka
+Mata Pelajaran : Bahasa Indonesia
+Hari/Tanggal : Selasa/3 November 2020
+Waktu : 13.00 s.d. 15.00
+Materi : Laporan Hasil Observasi
+Kelas : VII C
+tetap cantik. Resep jamu dirahasiakan. Namun sejak tahun 1930-an, sudah mulai
+dikembangkan jamu komersial, yang banyak dijajakan di kota-kota di Jawa. Pada
+mulanya jamu berbentuk serbuk, namun kini ada juga yang dikemas dalam bentuk
+seperti tablet, kapsul, cairan, salep, param, pilis, dan tapal. 
+ Rempah-Rempah
+Rempah dalam arti luas adalah bahan yang berasal dari tumbuhan dan memberikan
+aroma dan rasa khusus pada makanan. Sebagian bahan rempah juga bisa digunakan
+sebagai bahan baku jamu dan kosmetik. Adapun rempah dalam arti sempit adalah
+komoditas perdagangan (pala, cengkeh, lada, kayu manis), yang pada abad ke-17
+menarik bangsa Eropa (misalnya VOC) untuk datang ke Indonesia serta menguasai
+perdagangannya, terutama di daerah Maluku.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-yang-bukan-temasuk-sepuluh-parami-yaitu-a-danab-silac-adhitthanad-karunakita-menjalani-sila-dengan-menjalani-a-lima-pantangan-dan-lima-kebenaranb-lima-kewajiban-dan-lima-kesu">27.
+                                            Berikut yang bukan temasuk sepuluh Parami yaitu .... *A. DanaB. SilaC. AdhitthanaD. KarunaKita menjalani sila dengan menjalani .... *A. lima pantangan dan lima kebenaranB. Lima kewajiban dan lima kesucianC. lima pantangan dan lima kewajibanD. lima kebenaran dan lima kebajikan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#egala-peraturanososiswanya-agar-senantiasa-mentaati-segala-perd-progresif-persuasivee-preventif-regresifenasehati-para-muridnyaendalian-sosial-dapat-melakukukan-fungsinya-dengand-intimidasiat-dil">28.
+                                            egala peraturanOŠOSiswanya agar senantiasa mentaati segala perD. progresif - persuasiveE. preventif-regresifenasehati para muridnyaendalian sosial dapat melakukukan fungsinya denganD. Intimidasiat dilakukan secara dua arah untuk membawa situasi ke arahilon pengendalian sosial yang dilakukan oleh individu terhadap13. Ajakan guru di sekolah kepada para siswanyyang berlaku, termasuk jenis pengendalian sosiA. preventif - edukatifB. preventif - represifC. represif-edukatif14. Sekolah dapat menjadi pengendali sosial dengan carA. Memberi kebebasan pada para muridnyaB. Mendidik, membimbing dan menasehati paramC. Mencerdaskan para muridnyaD. Mengawasi setiap perilaku muridnyaE. Memberi sanksi keapada yang melanggar hukum15. Lembaga yang melaksanakan pengendalian sosialhimbauan atau paksaan. Hukum sebagai alau paksaan. Hukum sebagai alat pengendalian sosialdan mutlak, karena disertai dengan ....A. ContohB. TeguranE. PersuasiC. Sanksi16. Pengendalian sosial dapat dilakukan secarayang lebih kondusif. Contoh pengendalian sosial ykelompok misalnya ....A. seorang suami menaehati istrinyaB. masyarakat terhadap warganyaC. seorang guru terhadap muridnyaD. tokoh masyarakat terhadap pemudaE. ayah dan ibu terhadap anaknya17.Agen kontrol sosial yang biasa menggunakan demsosial yang biasa menggunakan demonstrasi sebagai alat control sosialterhadap para pemimpin maupun pejabat pemerintah adalah...A. pengadilanD. polisiB. mahasiswaE. pengadilanC. sekolah18. Sifat utama dari desas-desus adalah penyebaran berita yang menyangkut hal - haltertentu, yaitu ...A. keteraturan sosialD. pengendalian sosialB. penyimpangan sosialE. kerawanan sosialC. kesenjangan sosial19.Adat merupakan pranata yang berperan dalam pengendalian sosial, sebab adapt sebagailembaga berisiA. KebiasaanD. Norma dan nilaiB. Tata kelakuanE. kebudayaanC. Tradisi20. Lembaga sosial yang bertugas mencegah dan mengatasi perilaku menyimpang dengancara menangkap memeriksa serta mengajukan ke pengadilan bagi yang berperilakumenyimpang adalah ...A. HakimB. JaksaC. PolisiD. GuruE. Tokoh masyarakat21. Pernyataan di bawah yang merupakan contoh pengendalian sosial resmi adalah ..A. Ayah memberi teguran anaknya yang bangun kesianganB. Guru menyuruh siswanya mengerjakan perilaku​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#saksamajamu-adalah-obat-yang-dibuatdari-tumbuhan-obat-baik-dari-buah-bunga-daun-tangkai-akar-maupunkulitnya-diperkirakan-ada-sekitar-150jenis-tumbuhan-yang-sudah-biasadigunakan-sebagai-bahan-ba">29.
+                                            Saksama!Jamu adalah obat yang dibuatdari tumbuhan obat, baik dari buah.bunga, daun, tangkai, akar, maupunkulitnya. Diperkirakan ada sekitar 150jenis tumbuhan yang sudah biasadigunakan sebagai bahan baku jamu.Konon, pada awalnya jamu hanya di-konsumsi oleh kalangan wanita istanaKerajaan Mataram (abad ke-17) agarmereka tetap cantik. Oleh sebab itu,resep jamu dirahasiakan. Namun sejaktahun 1930-an, sudah mulai dikem-bangkan jamu komersial yang banyakdijajakan di kota-kota besar di Jawa.Pada mulanya jamu berbentuk serbuk,namun kini ada juga yang dikemasdalam bentuk seperti tablet, kapsul,cairan, salep, param, pilis, dan tapal.Gagasan utama paragraf di atasadalah ....a. Jamu dibuat dari tumbuhan obat,baik dari buah, bunga, daun,tangkai, akar, maupun kulitnya.b. Pada mulanya jamu berbentukserbuk, namun kini ada juga yangdikemas dalam bentuk sepertitablet, kapsul, cairan, salep, pa-ram, pilis, dan tapal.C. Sejak tahun 1930-an, sudah mulaidikembangkan jamu komersial,yang banyak dijajakan di kota-kota di Jawa.d. Diperkirakan ada sekitar 150jenis tumbuhan yang sudah biasadigunakan sebagai bahan bakujamu.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#49-produksi-buah-papaya-terbaik-per-hektar-dapat-mencapai-4-ton-per-hektarntya-pak-dedi-di-paraman-ampalu-satu-siklus-budiidaya-mendapatkan-3-ton-per-kektar-harga-per-kg-buah-papaya-adalah-rp-5-000">30.
+                                            49. produksi buah papaya terbaik per hektar dapat mencapai 4 ton per hektarntya, pak Dedi di Paraman Ampalu satu siklus budiidaya mendapatkan 3 ton per kektar, harga per kg buah papaya adalah Rp 5.000 ,ditanya berapakah total uang yang diperolehnya a.Rp 15.000.000 b.Rp.20..000.000 c. Rp. 25.000.000 d.Rp. 30.000.000​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jamnujamu-adalah-obat-yang-dibuat-dari-tumbuhan-obat-baikdari-buah-bunga-daun-tangkai-akar-maupun-kulitnya-diperkirakan-ada-sekitar-150-jenis-tumbuhan-yang1-sudah-biasa-digunakan-sebagai-bahan-ba">31.
+                                            JamnuJamu adalah obat yang dibuat dari tumbuhan obat, baikdari buah, bunga, daun, tangkai, akar maupun kulitnya.Diperkirakan ada sekitar 150 jenis tumbuhan yang1 Sudah biasa digunakan sebagai bahan baku jamu.I Konon, pada awalnya jamu hanya dikonsumsi oleh1 kalangan wanita istana kerajaan Mataram (abad ke-11 agar mereka tetap cantik. Resep jamu dirahasiakan1 Namun sejak tahun 1930-an, sudah mulai1 dikembangkan jamuKomersial, yang banyak dijajakan di kota-kota di Jawa.Pada mulanya jamu berbentuk serbuk, namun kini adauga yang dikemas dalam bentuk seperti tablet, kapsulcairan, salep, param, ilis, dan tapal.Surber: Ensiklopedia Indonesia. Isi dari kutipan buku tersebut adalah...A. Sampai sekarang jamu hanya dikonsurnsi olehkalangan tertentu.dirahasiakanberbagi bentukB. Jamu dibuat dari tumbuhan obat.C. Sampai sekarang resep jamu banyak yangD. Sejak zaman dahulu jamu sudah dibuat dalam</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-indonesianbacalah-teks-berikut-dengan-saksamasi-keledal-pembawa-garampada-suatu-hari-di-musim-panas-tampak-seekor-keledai-berjalan-di-pegunungan-keledara-beberapa-karung-berisi-garam-di-punggungny">32.
+                                            B. IndonesianBacalah teks berikut dengan saksama!Si keledal Pembawa GaramPada suatu hari di musim panas tampak seekor keledai berjalan di pegunungan keledara beberapa karung berisi garam di punggungnya. Karung itu sangat berat, sedangkanmatahari bersinar dengan terima"Aduh. panas sekali. Sepertinya aku sudah tidak kuat berjalan lagi," kata keledai. Namun, taklama berselang, ia melihat sebuah sungai. "Ah, ada sumgait Lebih baik aku berhenti sebentar,kata keledai dengan gembira.Tanpa berpikir panjang, ia masuk ke dalam sungai dan keledai itu tercebur. la berusahauntuk berdiri kembali, fetapi tidak berhasil. Lama sekali keledai berusaha untuk berdiri. Anchnyasemakin berada di dalam air, ia merasa bebanndi punggungnya semakin ringan. Akhimya.keledai itu bias kembali bendiri. "Ya ampun, paramnya habis!" kata kata tuannya dengan marahOh, maaf? Sepertinya garamnya larut di dalam air," kata keledaiBeberapa hari kemudian, keledai mendapat tugas lagi membawa garam. Seperti biasa, iaharus berjalan melewati pegunungan bersama tuannya. "Tak lama lagi aka nada sungai di depansana," kata keledai dalam hati. Ketika berjalan menyeberangi sungai, keledai menjatuhkandirinya dengan sengaja, Byuuur! Tentu saja garam yang ada di punggungnya menjadi larut didalam air. Bebannya menjadi ringan. "Asyik! Jadi ringan!" kata keledai. Namun mengetahuikeledai melakukan hal itu sengaja, tuannya menjadi marah. "dasar keledai malas!" kata tuannyadengan geram.Keesokan harinya, keledai mendapat tugas membawa kapas. Sekali lagi, ia berjalanbersama tuannya melewati pegunungan. Ketika sampai di sungai, lagi-lagi keledai menjatuhkandiri dengan sengaja.Byuuur! Namun, apa yang terjadi. Muatannya menjadi berat sekali. Rupanya kapas yangdibawanya menyerap air dan menjadi seberat batu. Mau tidak mau, keledai harus terus berjalandengan beban yang ada di punggungnya. Keledai berjalan sempoyongan di bawah teri mataharisambil membawa beban berat di punggungnya.9. Tulislah pengertian fabel!10. Tulislah unsur yang membentuk fabel (3 saja)11. Tulislah peristiwa-peristiwa yang terdapat dalam cerita di atas! (3 saja)12. Telaahkanlah struktur fabel di atas!13. Jelaskan apa saja yang dimuat dalam setiap struktur fabel!14. Amanat apakah yang ingin disampaikan dalam fabel di atas!15. Bagaimanakah watak tokoh utama dalam cerita di atas? Jelaskan dengan bukti teks!​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bacalah-bacaan-dibawah-inisekolah-alternatif-anak-jalanan-saajsekolah-alternatif-anak-jalanan-terletak-di-taman-badan-pendidikan-pelatihan-badiklat-dkijakarta-jalan-hr-rasuna-said-kuningan-jak">33.
+                                            Bacalah bacaan dibawah ini!Sekolah Alternatif Anak Jalanan (SAAJ)Sekolah Alternatif Anak Jalanan terletak di Taman Badan Pendidikan Pelatihan (Badiklat) DKIJakarta, Jalan HR Rasuna Said, Kuningan, Jakarta Selatan. Sekolah ini berdiri di tahun 2002 dibawahYayasan Pemberdayaan Rakyat Miskin (PaRam). Kelas-kelasnya terbagi menjadi 3 bagian yaitu kelasTK A1 untuk pendidikan Usia Dini (PAUD), TK A2 untuk usia 5-6 tahun, TK B untuk usia 6-7 tahun.Kegiatan belajar mengajar berlangsung dari hari senin hingga jumat dari jam 11.00 WIB hingga 17.00WIB. Para guru berusaha mencerdaskan para bibit bangsa. Mereka tetap semangat belajar pancasila,lagu-lagu nasional, dan pendidikan dasar agama meskipun ruang kelasnya hanya satu. Tak lupa pulaproses akademik didampingi oleh kegiatan ekstrakurikuler setiap sabtu.5. tuliskan kesimpulan isi teks diatas​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">34.
+                                            jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-over-the-year-kids-with-some-pretty-cool-inventions-2-by-embedding-protein-into-windows-nikita-raflikov-a-way-to-light-gomes-without-the-use-of-electricity-3-over-the-next-18-years-t">35.
+                                            1. Over the year, kids ... with some pretty cool inventions.
+2. By embedding protein into windows, Nikita Raflikov ... a way to light Gomes without the use of electricity.
+3. Over the next 18 years, the Hell Company ... over 550 court challenges including several that went to the Supreme Court, but none was successfull.
+4. George Nissen ... the first modern trampoline ini his parent's garage with the help of his gymnastics coach, Larry Griswold.
+5. Between 1873 and 1874, Bell ... long days and nights trying to perfect the harmonic telegraph.
+6. At 16, Sean Russel ... the Stow It-Don't Throw It Project to combat the negative impact of marine debris on marine wild life.
+7. Kylie Simonds ... a Patent and is trying to raise money to put the backpack into production.
+8. In 2012, a thirteen-year-old girl ... a potentially lucrative business built around her unusual cure for hiccups.
+9. The language of Braille ... the tactile writing system used by the blind and the visually impaired around the world.
+10. Param Jaggi ... an award from the Enviromental Protection Agency for his enviromentally friendly invention which cleans car exhaust that would normally pollute the air.
+A has since become
+B spent
+C has won
+D faced
+E has secured
+F designed
+G launched
+H have come up
+I created
+J has found</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tanaman-obat-yang-dapat-digunakan-sebagai-param-untuk-anggota-badan-yang-terkilir">36.
+                                            tanaman obat yang dapat digunakan sebagai param untuk anggota badan yang terkilir....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bacalah-informasi-berikut-untuk-menja-wab-soal-nomor-1-dan-2saaj-terletak-di-taman-badan-pendi-dikan-dan-pelatihan-badiklat-dki-jakartajalan-hr-rasuna-said-kuningan-jakartaselatan-sekolah-alter">37.
+                                            Bacalah informasi berikut untuk menja-wab soal nomor 1 dan 2!SAAJ terletak di Taman Badan Pendi-dikan dan Pelatihan (Badiklat) DKI Jakarta,Jalan HR Rasuna Said, Kuningan, JakartaSelatan. Sekolah alternatif anak jalananberdiri tahun 2002 di bawah YayasanPemberdayaan Rakyat Miskin (PaRam).Kelas-kelasnya terbagi menjadi 3 bagian,yaitu kelas TK A1 untuk pendidikan usiadini (PAUD), lalu TK A2 untuk anak usia5-6 tahun, dan TK B untuk anak usia 6-7tahun. Kegiatan belajar mengajar berlang-sung dari Senin hingga Jumat dari pukul11.00 WIB hingga 17.00 WIB.1. Berikut bukan merupakan kelas yangterdapat di sekolah alternatif anakjalanan ....a. TKA1b. TKA2c. TKBd. TKC(Bahasa Indonesia KD 371​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-parami-adalah-sifat-sempurna-atau-sifat-sifat-luhur-yang-di-2-melepas-juga-berarti-mudah-memaafkan-mudah-3-terimalah-dhamma-dan-lakukan-dalam-kehidupan-kita4-keju">38.
+                                            1.parami adalah sifat sempurna atau sifat-sifat luhur yang di............2.melepas juga berarti mudah memaafkan mudah..........3.terimalah dhamma.....,...........dan lakukan dalam kehidupan kita4.kejujuran membuat orang lain percaya dan............kita5.kita juga harus menunjukkan...........dengan berusaha untuk membuat semua bahagia6.orang yang teguh.............tekad yang kuat dalam melakukan hal hal yang baikpliss jawab..........​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paraman-adalah-sapaan-perempuan-kepada-anak-laki-laki-dari-saudara">39.
+                                            paraman adalah sapaan perempuan kepada anak laki-laki dari saudara</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="inilah-cara-menggunakan-param-cair-spesial-pada-kataparam-kalimat-di-atas-adalahburuan-ya-penting">
+                            1. inilah cara menggunakan param cair spesial.
+pada kata''param'' kalimat di atas adalah
+buruan ya penting....</h2><br />
+                        obat gosok atau krim cair spesiamOBAT GOSOK ATU OBAT KRIM<br />
+                                            <h2 class="ez-toc-section" id="pengertian-salep-param-pilis-dan-tapal">
+                            2. pengertian salep, param, pilis, dan tapal</h2><br />
+                        salep buat dioles kalo Kena keseleo <br />
+                                            <h2 class="ez-toc-section" id="petunjukan-pemakaian-param-cair-spesial-1-kocok-dahulu-isi-botol-sebelum-dibuka-2-bukalah-tutup-botol-dengan-cara-menekan-tutup-botolputar-ke-kiri3-ambil-tutup-botol-dengan-pelan-agar-tidak-tum">
+                            3. petunjukan pemakaian param cair spesial 
+1).kocok dahulu isi botol sebelum dibuka 
+2).bukalah tutup botol dengan cara menekan tutup botol,putar ke kiri
+3).ambil tutup botol dengan pelan agar tidak tumpah
+4).{.....}
+5).tutuplah botol dengan menekan tutup botol,putar ke kanan 
+petunjuk pemakaian param cair spesial dilengkapi dengan kalimat
+A.tuangkan param dimangkuk kecil,diamkan beberapa jam
+B.ambil param secukupnya,lalu oleskan pada bagian tubuh yang pegal
+C.ambil param sebanyak mungkin,lalu oleskan pada bagian tubuh yang pegal 
+D.tuangkan param dengan kanan kiri ditelapak tangan kanan hingga tumpah </h2><br />
+                        B.ambil param secukupnya,lalu oleskan pada bagian tubuh yang pegalb ambil param sebanyak mungkin<br />
+                                            <h2 class="ez-toc-section" id="jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">
+                            4. jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</h2><br />
+                        tumbuhan paku tanduk<br />
+                                            <h2 class="ez-toc-section" id="kegiatan-6-3-menyimpulkan-isi-teks-cerita-inspiratif-1-bacalah-teks-cerita-inspiratif-berikut-orang-tua-yang-bijak-suatu-ketika-huchaplah-seorang-tua-yang-buak-pada-suatu-pagi-datanglah-seorang-an">
+                            5. Kegiatan 6.3 Menyimpulkan Isi Teks Cerita Inspiratif 1 Bacalah teks cerita inspiratif berikut. Orang Tua yang Bijak Suatu ketika, huchaplah seorang tua yang buak. Pada suatu pagi, datanglah seorang anak muda yang sedang dirundung hanyak nasalah. Laugkabnya gonta dan air muka yang ruwet Tame itu, memang tampak seperti orang yang tidak bahagia Tanpa membuang waktu, ing itu menceritakan semua masalahnya. Pak Tua yang bijak hanya mendengarkannya dengan saksana In lalu mengambil segenggam garam dan meminta tamunya untuk mengambil segelas air Dabarkannya garam itu ke dalam gelas lalu disshuknya perlahan Colm, animan ini, dan katakan bagaimana na ujar Pak Tra itu. "Tabit. Pahit sekall," jawab Anak Muda tersebut, sunbil meludah ke samping Pak Tim it, sedikit tersenyum. In, lalu mongsjaktarostya im sntuk berjalan ke tepi telaga di dalam hutan dekat tempat tinggalnya Koda orang itu berjalan berdampingan, dan akhirnya sampailah mereka ke tepi telaga yang tenang In. Pak Tua im talu kembali metaburkan segenggam param, ke dalam teto stu. Dengan sepoteag kayu, dibuatnya pelombang Angaduk-aduk dan tercipta riak ent, ineguak betenangan telaga itu. "Coba, ambil air dari telaga ini, dan Saat Anak Muda ir selesai mereguk aet Pak Tha berkata lagi, "Bagaimana Segar," ujr Anak Muda im "Apakah kamu merasakan parain of dalam air ita?" tanya Pak Tua lagi, "Tidak," jawab Anak Muda terschg Dengan bijak. Pak Tuaitumenepuk nepuk pregung si Anak Muda, la lalu mengajakma duduk berhadapan, bersimpul di samping telaga in "Anak Muda, dengarlah Pahuya kehidupan, adalah layaknya segenggang tidak lebih dan tidak kurang Jumlah dan tag pahit itu adalah sama, dan memang akan tetap sama. Tapi, kepahitan yang kita rasakan, akan sangat tergantung dari wadah yang kita mela Kepahitan im, akan didasarkan dari perasiat tempat kita meletakkan segalanya. tu semua akan tergantung pada hati kita. Jadi, sad kan merasakan kepahitan dan kegagalan dalam hidup, hanya ada satu hal yang bisa kama lakukan. Lapangkanlah dadamu menerima semuanya. Luaskanlah hatimu untuk me nampang setiap kepahitan itu," ujar Pak Tus Pak Tua itu lalu kembali memberika ansihat Hatunu, adalah wadah itu. Pe rasaunu adalah tempat itu. Kalbumo, adalah tempat kamu menampung segalanys Jadi, jangan jadikan hatima itu seperti pelas buatlah laksana telaga yang mampu mereka setiap kepahitan itu dan merubahnyn incujed kesegaran dan kebahagiaan," jelas Pak Thi kembali Keduanya lalu beranjak pulang, Mereka sama-sama belajar han itu. Pak J pun kembali menyimpan "segenggam garam, unnik anak muda yang lain, yang sering dating pidanya membawa keresahan jiwit. Sumber siteligationis folyta No. 1 1 3₁ 4. Teks Cerita Inspiratif Ungkapan Simpati Ungkapan Empati Perasaaan Pribadi Kepedulian Simpulan Presentasikanlah hasilnya di depan Ungkapan dalam teks inspiratil melipu à. Ungkapan Simpati Ungkapan simpati dalah keikur merasakan perasaan (senang, sedih) orang lain. h. Kepedulian Kepedulian adalah sikap mengir (memprihatinkan) sesuatu yang E masyarakat Uji Kemampuan 6.2 1. Diskusikanlah bersama teman 2. Carilah sebuah teks cerita insp 3. Tentukanlah ungkapan simpa dari teks cerita inspiratif terse 4. Buatlah simpulan dari isi teks 5. Presentasikan jawabanmu di Menelaah Struk dan Isi Teks Ceri 1. Menelaah Struktur Te Kamu telah mengetahui pengertian temukan lah orientasi, komplikasi, resolusi,dan reorientasi pada cerita tersebut​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Struktur Teks Cerita Inspiratif:</strong></p><p><strong>Orientasi: </strong>Diperkenalkan tokoh-tokoh dalam cerita, yaitu seorang anak muda yang sedang dirundung masalah dan seorang tua bijak.</p><p><strong>Komplikasi:</strong> Anak muda tersebut merasa sedih dan tidak bahagia karena masalah yang sedang dihadapinya.</p><p><strong>Resolusi:</strong> Tua bijak memberikan pelajaran tentang hidup dengan cara membuat analogi tentang garam dan air, kemudian membawa anak muda tersebut ke tepi telaga dan memberikan pelajaran tentang cara menangani kepahitan dan kegagalan dalam hidup.</p><p><strong>Reorientasi:</strong> Anak muda tersebut belajar dari pelajaran yang diberikan oleh tua bijak dan berubah menjadi lebih bijaksana.</p><p><strong>Simpulan: </strong>Teks cerita inspiratif ini mengajarkan kita tentang cara menangani kepahitan dan kegagalan dalam hidup dengan sikap lapang dada dan luas hati.</p><p><strong></strong></p><p>jika sesuai tolong bantu jadikan jawaban tercerdas ya. terimakasih sehat selalu</p><br />
+                                            <h2 class="ez-toc-section" id="b-isilah-dengan-jawaban-yang-benar-paragraf-berikut-untuk-soal-nomor-1-5-setiap-anak-memiliki-hak-untuk-mendapatkan-pendidikan-termasuk-anak-jalanan-kondisi-tersebut-menjadi-alasan-yayasan-pember">
+                            6. B. Isilah dengan jawaban yang benar! Paragraf berikut untuk soal nomor 1-5. Setiap anak memiliki hak untuk mendapatkan pendidikan, termasuk anak jalanan. Kondisi tersebut menjadi alasan Yayasan Pemberdayaan Rakyat Miskin (Param) mendirikan sekolah bagi anak jalanan bernama Sekolah Alternatif Anak Jalanan (SAAJ), SAAJ merupakan alternatif pendidikan bagi anak-anak jalanan ataupun anak- anak dari keluarga prasejahtera. SAAJ menerapkan kegiatan belajar- mengajar setiap Senin hingga Jumat dan kegiatan ekstrakurikuler setiap Sabtu. Pembelajaran dimulai pada pukul 11.00-17.00 WIB. Anak- anak jalanan belajar secara bergantian di ruang kelas yang sama. Anak-anak jalanan belajar membaca dan menghitung. Selain itu, mereka belajar Pancasila, lagu nasional, dan pendidikan agama Islam. 1. Informasi tentang hak anak mendapatkan pendidikan terdapat pada kalimat.. paragraf kesatu, 2. membangun.asa.anak-anak jalanan lewat. pendidikan?page=all, diakses 9 Agustus 2021 3. Informasi pada kalimat kedua paragraf kedua dapat ditanyakan dengan kata tanya.... Informasi pada kalimat ketiga paragraf pertama dapat ditanyakan dengan kata tanya.... 4. Paragraf kedua memuat informasi penting mengenai... SAAJ. 5. Fakta mengenai pembelajaran yang diberikan terdapat pada paragraf kedua kalimat....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. "Setiap anak memiliki hak untuk mendapatkan pendidikan"</p><p>2. Kapan anak-anak di SAAJ memulai waktu belajar?</p><p>3. apa alasan Param mendirikan SAAJ?</p><p>4. Penerapan sistem belajar mengajar di SAAJ</p><p>5. Anak-anak jalanan belajar membaca dam menghitung. Selain itu merek belajar Pancasila, lagu nasional, dan pendidikan agama Islam </p><br />
+                                            <h2 class="ez-toc-section" id="param-masyarakat-di-bidang-ekonomi-dalam-contoh-implementasi">
+                            7. Param Masyarakat di Bidang Ekonomi Dalam Contoh Implementasi  </h2><br />
+                        memperkenalkan barang dalam negeri<br />maaf ya kalok salahMemperkenalkan barang ke luar negri dan dalam negri<br />
+                                            <h2 class="ez-toc-section" id="pendidikan-agama-hindu-dan-budi-pekerti1-setelah-memahami-tentang-isi-kitab-bhagawadgita-buatlah-pendapat-kalian-mengenai-isi-dari-18-bab-yang-ada-dalam-kitab-bhagawadgita-contoh-babpendapatbab">
+                            8. Pendidikan agama hindu dan budi pekerti!1.	setelah memahami tentang isi kitab bhagawadgita, buatlah pendapat kalian mengenai isi dari 18 bab yang ada dalam kitab bhagawadgita !contoh :bab	pendapat	bab	pendapati	x	:ii	xi	:iii	xii	:iv	xiii	:v	xiv	:vi	xv	:vii	xvi	:viii	xvii	:ix	xviii	:2.	tulislah arti dan nilai-nilai yang perlu dipahami dan laksanakan dalam kehidupan sehari-hari !"indriyanni paranny ahurindriyebhyah param manahmanasas tu para buddhiryo buddeh paratas tu sah"artinya:…………………………………………………………………………………………………………………………………………………………………</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>gk tau aku bukan orang hindu :v</p><br />
+                                            <h2 class="ez-toc-section" id="24-bahan-lunak-buatan-yang-mempunyai-wujud-padat-lunak-yang-memiliki-aneka-warna-cerah-danmengeras-pada-saat-pengeringan-adalah-a-fiberglassb-polymer-clayc-paramd-gips%e2%80%8b">
+                            9. 24. Bahan lunak buatan yang mempunyai wujud padat lunak yang memiliki aneka warna cerah danmengeras pada saat pengeringan, adalah...A. FiberglassB. Polymer ClayC ParamD. Gips​</h2><br />
+                        <p>24. Bahan lunak buatan yang mempunyai wujud padat lunak yang memiliki aneka warna cerah dan  mengeras pada saat pengeringan, adalah... <strong>B. Polymer Clay</strong></p><strong>Pembahasan
+</strong><p>Bahan lunak buatan adalah sebuah bentuk dari bahan baku yang dimana digunakan ke dalam bentuk dari produk kerajinan. Beraga macam bentuk karya kerajinan tangan yang berasal dari bahan lunak buatan akan dapat dilakukan pembuatan sesuai dengan jenis dan juga kegunaan yang ada.</p><p>Sehingga hal ini akan menjadi sesuai dengan namanya, yaitu produk kerajinan ari bahan lunak yang memiliki sifat lentur, lembut, empuk dan juga akan dapat dengan mudah dengan bahan lainnya seperti kertas, gips, fiberglass, lilin, sabun dan berbagai macam bentuk bahan lainnya. </p><p>Jenis-jenis dari bahan kerajinan lunak adalah sebagai berukut:</p>Bahan lunak buatan yaitu adalah bahan lunak buatan yang terbuat dari bahan kimia, dalam hal ini contohnya adalah polymer clay dan juga plastisin.Bahan lunak alami yaitu bahan lunak yang berasal dari alam seperti tanah liat.Pelajari lebih lanjut
+<p>1. Materi tentang  bahan untuk karya kerajinan yang diolah menjadi lunak merupakan pengertian dari a. bahan lunak alami b. bahan lunak racikan c. bahan lunak kombinasi d. bahan lu... https://brainly.co.id/tugas/18268463</p><p>2. Materi tentang  Pengertian Bahan Lunak dan Asal Bahan Lunak jenis Dan krakteristik Bahan Lunak? @Bantu Jawab https://brainly.co.id/tugas/23214209</p><p>3. Materi tentang  
+1) carilah karakteristik dari bahan lunak alami dan bahan lunak buatan! 2) Carilah teknik pengolahan bahan lunak alami dan bahan lunak buatan! https://brainly.co.id/tugas/11158961</p><p>-----------------------------
+</p><strong>Detil jawaban
+</strong><p><strong>Kelas:  4</strong></p><p><strong>Mapel:  Seni Budaya</strong></p><p><strong>Bab:  Bab 16 - Berkarya Benda Kerajinan dan Model Benda Konstruksi</strong></p><p><strong>Kode:  4.19.16</strong></p><p><strong>#AyoBelajar
+</strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="tapah-param-krtayuge-tretayam-jnananucyate-dvapare-yajnam-ityacurddnama-ekam-kalau-yuge-terjemahan-pelaksanaan-penebusan-dosa-yang-ketat-tapa-merupakan-kebajikan-pada-masa-satyayuga-pengetahuan">
+                            10. Tapah param krtayuge tretayam jnananucyate, dvapare yajnam ityacurddnama ekam kalau yuge. Terjemahan : Pelaksanaan penebusan dosa yang ketat (tapa) merupakan kebajikan pada masa Satyayuga; pengetahuan tentang sang diri (jnana) pada Tretayuga, pelaksanaan upacara kurban keagamaan (yajna) pada masa Dwaparayuga, dan melaksanakan amal sedekah (danam) pada masa Kaliyuga (Parasara Dharmasastra I.23). Dari uraian sloka di atas, jelaskan maksud dari isi sloka tersebut !​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>gak tau,saya islam jadi nggak ngerti.</p><br />
+                                            <h2 class="ez-toc-section" id="jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">
+                            11. jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</h2><br />
+                        tumbuhan paku tanduk<br />
+                                            <h2 class="ez-toc-section" id="join-the-leaguematcri-himpunandateparamsuau-ucas-tordnect-26siswa-gemarmptomatica20-siswa-gemorabanasgemor-bahasa-indonesia10-siswa-gomar-clowanyo-15-siswatidos-gomar-urdhansa%d0%b0-a-gambarcan-dia">
+                            12. JOIN THE LEAGUEmatcri himpunanDate:paramSuau ucas tordnect 26siswa gemarmptomatica20 siswa gemorabanasgemor bahasa Indonesia,10 siswa gomar clowanyo 15 siswatidos gomar urdhansaА A. Gambarcan diagram  ven di atas​</h2><br />
+                        <p>Jawaban terlampir difoto (atas)</p><p>Mungkin boleh di kasi nama ?</p><p>biar lebih jelas diagram venn nya</p><p></p><p>•Jika ada kesalahan ana maaf</p><p> •Jika ada kata" menyinggung maaf</p><p> •semoga membantu</p><p> •Jika benar mohon jadikan yang trbaik</p><p> </p><p><strong>TAP -&gt; ❤!</strong></p><p><strong>Dan TAMBAH (+)!!</strong></p><p><strong> (SALAH? HUBUNGI SAYA!!)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-ya-untuk-eksperimen-biologikalau-misalnya-cara-untuk-mengetes-isi-obat-tablet-seperti-paramxultrflu-itu-kira-kira-prosedur-nya-gimana-yaya-memang-sih-udah-ada-list-komposisi-nya-tap">
+                            13. tolong bantu ya untuk eksperimen biologi
+kalau misalnya cara untuk mengetes isi obat tablet seperti param*x/ultr*flu itu kira kira prosedur nya gimana ya?
+ya memang sih udah ada list komposisi nya tapi ini buat eksperimen nya jadi disuruh nya menjelaskan cara mengetahui kalau obat tablet (misalnya p*ramex) itu isinya apa
+tks.</h2><br />
+                        cara untuk mengetahui komposisi, mungkin maksud anda cara untuk memisahkan bahan obat untuk dianalisis.<br /><br />cara analisis obat :<br />masalah : apa yg ingin diketahui pada obat tsb.<br />2. penggunaan bahan kimia sesuai dengan bahan yg dapat memisahkan bahan obat tsb.<br />3. pengujian dilakukan didalam lab dan harus dengan pengawasan.<br /><br />NB: pengujian seperti ini harus dengan pengawasan karena bahan kimia sangat berbahaya.<br />
+                                            <h2 class="ez-toc-section" id="jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">
+                            14. jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</h2><br />
+                        Sebagai tanaman hias, contohnya Adiantum (suplir), Platycerium sp (paku tanduk rusa), Asplenium nidus (paku sarang burung), Nepholepism dan Alsophila glauca (paku tiang). <br />
+                                            <h2 class="ez-toc-section" id="yg-bukan-merupakan-contoh-pengolahan-jahe-adalah-a-dibuat-menjadi-wedang-jaheb-dibuat-menjadi-permen-jahec-dibuat-menjadi-paramd-dibuat-menjadi-hiasan%e2%80%8b">
+                            15. Yg bukan merupakan contoh pengolahan jahe adalah... A. Dibuat menjadi wedang jaheB. Dibuat menjadi permen jaheC. Dibuat menjadi paramD. Dibuat menjadi hiasan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d.dibuat menjadi hiasan</p><p>maaf kalau salah</p><p><strong>Jawaban:</strong></p><p>D.dibuat menjadi hiasan</p><p><strong>Penjelasan:</strong></p><p>Yang bukan merupakan contoh pengolahan jahe</p><p></p><p>SEMOGA MEMBANTU!</p><br />
+                                            <h2 class="ez-toc-section" id="membeli-jeruk-dipasar-5kg-can-ibu-juga-memba-ikan-sebanyak-5kg-berapa-jumlah-barat-total-belanja-ibu-a-pasar-ayatakan-param-satuan-kg-keneal-gan-gram%e2%80%8b">
+                            16. membeli jeruk dipasar 5kg can ibu juga memba ikan sebanyak 5kg berapa jumlah barat total belanja ibu a pasar ayatakan param Satuan Kg keneal, gan gram​</h2><br />
+                        <p><strong>Jawab:</strong></p><p>total belanja ibu di pasar adalah 10000 gram atau 10 kg</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>Jika ibu membeli jeruk sebanyak 5 kg dan juga membeli ikan sebanyak 5 kg, maka total belanjaan ibu adalah jumlah dari jeruk dan ikan yang dibeli.</p><p></p><p>1 kg = 1000 gram</p><p></p><p>Jumlah belanja ibu = (berat jeruk dalam gram) + (berat ikan dalam gram)</p><p>Jumlah belanja ibu = (5 kg * 1000 gram/kg) + (5 kg * 1000 gram/kg)</p><p>Jumlah belanja ibu = 5000 gram + 5000 gram</p><p>Jumlah belanja ibu = 10000 gram</p><p></p><p>Jadi, total belanja ibu di pasar adalah 10000 gram atau 10 kg.</p><br />
+                                            <h2 class="ez-toc-section" id="tanaman-obat-yang-digunakan-sebagai-param-untuk-anggota-badan-yang-terkilir-adalah">
+                            17. tanaman obat yang digunakan sebagai param untuk anggota badan yang terkilir adalah...</h2><br />
+                        tanaman tersebut adalah jahejahe dan kunyit kalo gk salah<br />
+                                            <h2 class="ez-toc-section" id="jenis-tumbuhan-paku-berikut-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">
+                            18. Jenis tumbuhan paku berikut yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah?...</h2><br />
+                        <p><strong>Tumbuhan paku ekor kuda adalah tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param dan sebagai tanaman hias.</strong> Paku ekor kuda memiliki cabang-cabang mirip dengan ekor kuda. Paku ekor kuda hidup di tlingkungan yang berpasir.</p><p><strong>Penjelasan</strong></p><p>Tumbuhan paku ekor kuda termasuk pada tumbuhan paku peralihan. Tumbuhan paku ekor kuda memiliki batang yang beruas-ruas dan berwarna hijau. Batang tumbuhan paku ekor kuda bersifat keras karena dinding selnya mengandung silika.</p><p>Pelajari lebih lanjut materi tentang ciri-ciri tumbuhan paku ekor kuda pada brainly.co.id/tugas/2165501</p><p>
+#BelajarBersamaBrainly</p><br />
+                                            <h2 class="ez-toc-section" id="daun-cengkih-dapat-digunakan-sebagai-bahan-pembuat-a-paramb-maskerc-krim-pelembabd-krim-pemutihe-pelembab-bibir">
+                            19. daun cengkih dapat digunakan sebagai bahan pembuat... A. ParamB. MaskerC. Krim pelembabD. Krim pemutihE. Pelembab bibir</h2><br />
+                        B.masker<br /><br />berguna menghilangkan bekas jerawat.<br /><br />
+                                            <h2 class="ez-toc-section" id="11-jumlah-pemain-dalam-satu-tim-softball-adalah-orang12-sliding-palam-permainan-softball-amiah13softball-pertama-diperkindingkan-piinconesia-tahun-asa14silap-bapan-yg-benar-seleiah-memukul-logo-d">
+                            20. 11 jumlah pemain dalam satu tim softball adalah..... orang12 sliding palam permainan softball amiah13Softball pertama Diperkindingkan piinconesia tahun asa14Silap bapan yg benar Seleiah memukul LOGO Danm pamainan SoFl-boli aipaah..15bagian tubuh yg sebaiknya Digunakan untuk mattenkuih bess param permainan soetball apaiah1jelaskan langkahServis alas palam permainan bola voli mini2Heiskan perbepaan servis atas can servis mereceung Danam permainan bola voli mini3bagaimanakah bentuk pan ukuran lapangan Permalincan coftballAsebulkan macam Pellerakapan permainan softball yang digunakan oleh lim Penjaga5 5 wliskan langkahDaam maanak ng bola qorus palam permainan SoElba​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>............................</p><br />
+                                            <h2 class="ez-toc-section" id="jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">
+                            21. jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</h2><br />
+                        tumbuhan paku tanduk<br />
+                                            <h2 class="ez-toc-section" id="1-jamu-adalah-obat-yg-dibuat-dari-tumbuhan-obatbaik-dari-buahbungadauntangkaiakar-maupun-kulitnya-diperkirakan-ada-150-jenis-tumbuhan-yg-sudah-biasa-digunakan-sebagai-bahan-baku-jamu-konon-pada">
+                            22. 1.jamu adalah obat yg dibuat dari tumbuhan obat,baik dari buah,bunga,daun,tangkai,akar maupun kulitnya.diperkirakan ada 150 jenis tumbuhan yg sudah biasa digunakan sebagai bahan baku jamu .konon pada awalnya jamu hanya dikonsumsi oleh kalangan wanita istana kerajaan mataram ( abad ke17).agar mereka tetap cantik resep jamu dirahasiakan.namunsejak tahun 1930-an,sudah mulai dikembangkan jamu komersial,yg banyak dijajakan dikota kota jawa. pada mulanya jamu berbentuk serbuk,namun kini ada juga yg dikemas dalam bentuk tablet,kapsul,cairan,salep,param,pilis,dan tapal.butir butir pokok teks tersebut adalah....a.jamu adalah obat trasional berbahan tumbuhan yg sudah banyak dimanfaatkan orang.b.jamu adalah obat tradisional yg hanya dikonsumsi oleh kalangan wanita kerajaan.c.jamu adalah obat tradisional yg berkhasiat untuk merawat kecantikan wanita kerajaan.d.jamu adalah obat tradisional yg terbuat dari tumbuh tumbuhan yg hidup ditanah jawa .</h2><br />
+                        A.jamu adalah obat tradisional berbhn tumbuhan yg sudh banyak di manfaatkan orang <br />ps:klk nantik ada soal kyk gini lg kamu hrs carik kalimat yg penting biasanya di bagian awal kalimat atau bagian kalimat yg terakhir<br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="%e0%b6%b1%e0%b7%9c%e0%b6%ad%e0%b6%9a%e0%b7%8f-%e0%b6%9a%e0%b6%ab-%e0%b6%b1%e0%b7%92%e0%b7%80%e0%b6%b1%e0%b6%ad%e0%b7%8a-%e0%b6%9a%e0%b6%bba-ran%e0%b6%bb%e0%b7%94-%e0%b6%9c%e0%b6%b8%e0%b6%ab%e0%b6%b8">
+                            23. නොතකා කණ නිවනත් කරa ranරු ගමණම මතු බුදුබණශප්‍රමණය හැකිදනගරෙහි එraඳුන්aගේ ඒ පණගේසි. නි ණයගෙ a param ඡායාරෑක ළramණ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ini bahasa apa ya aneh sekali</p><p><strong>Jawaban:</strong></p><p>Abaikan telinga</p><p></p><p>Apakah mungkin untuk mencapai pencerahan di masa depan?</p><p>Itulah sumber kehidupan kota</p><p>C. Foto param debitur</p><p></p><p>maaf kalo salah ya </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="aturan-atau-disipin-moral-yang-di-rumuskan-atau-sengaja-di-buat-berdasarkan-kesepakatan-untuk-menciptakan-kondisi-masyarakat-yang-tertib-dan-damai-merupakan-sila-pakkati-silaparami-silapannat">
+                            24. aturan atau disipin moral yang di rumuskan atau sengaja di buat berdasarkan kesepakatan untuk menciptakan kondisi masyarakat yang tertib dan damai merupakan sila . . . . *pakkati silaparami silapannatisilapativeda silapadati sila​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pannati sila </p><p>maaf kalau salah</p><p>:)</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="terdapat-dua-corak-batik-yang-dipakai-keluarga-kerajaanyaitu-param-dan-truntum-menurutmubagaimana-perbedaan-falsafa-kedua-corak-batik-tersebut%e2%80%8b">
+                            25. terdapat dua corak batik yang dipakai.keluarga kerajaan,yaitu param dan truntum.menurutmu,bagaimana perbedaan falsafa kedua corak batik tersebut​</h2><br />
+                        <p>Jawaban:</p><p>2. Perbedaan falsafah atau makna dari batik Parang dan Truntum adalah :</p><p></p><p>Motif Batik Truntum bermakna cinta yang tumbuh kembali. Motif batik ini sebagai simbol cinta yang tulus tanpa syarat, abadi, dan semakin lama semakin terasa subur berkembang.</p><p></p><p>Karena maknanya, kain bermotif truntum biasa dipakai oleh orang tua pengantin pada hari penikahan. Harapannya adalah agar cinta kasih yang tumaruntum ini akan menghinggapi kedua mempelai.</p><p></p><p>Kadang dimaknai pula bahwa orang tua berkewajiban untuk “menuntun” kedua mempelai untuk memasuki kehidupan baru.</p><p></p><p>Motif Batik Parang memiliki kandungan makna yang tinggi. Bahasa simbol yang terkandung di dalamnya adalah sebuah pesan bahwa sebagai manusia hendaknya tidak pernah menyerah dalam mengarungi kehidupan, sebagaimana ombak di samudera yang tak pernah lelah untuk bergerak.</p><p>Bentuk motif batik parang yang saling berkesinambungan, menggambarkan jalinan hidup yang tidak pernah putus, selalu konsisten dalam upaya untuk memperbaiki diri, memperjuangkan kesejahteraan, maupun dalam menjaga hubungan antara manusia dengan alam, manusia dengan manusia dan manusia dengan Tuhannya.</p><p>Garis diagonal yang terdapat dalam motif batik Parang, memberi gambaran bahwa manusia harus memiliki cita-cita yang luhur, kokoh dalam pendirian, serta setia pada nilai kebenaran. Dinamika dalam pola parang ini juga disebut ketangkasan, kewaspadaan, dan kontituinitas antara satu dengan yang lainnya.</p><p>Penjelasan:</p><p>Semoga membantu.</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-dijawab-ya-rangkumlah-hasil-teks-observasi-berikut-jamujamu-adalah-obat-yang-dibuat-dari-tumbuhan-obat-baik-dari-buah-bunga-dauntangkai-akar-maupun-kulitnya-diperkirakan-ada-sekitar-1">
+                            26. tolong dijawab ya 
+rangkumlah hasil teks observasi berikut 
+Jamu
+Jamu adalah obat yang dibuat dari tumbuhan obat, baik dari buah, bunga, daun,
+tangkai, akar maupun kulitnya. Diperkirakan ada sekitar 150 jenis tumbuhan yang
+sudah biasa digunakan sebagai bahan baku jamu. Konon, pada awalanya jamu hanya
+dikonsumsi oleh kalangan wanita istana kerajaan Mataram (abad ke-17) agar mereka
+Mata Pelajaran : Bahasa Indonesia
+Hari/Tanggal : Selasa/3 November 2020
+Waktu : 13.00 s.d. 15.00
+Materi : Laporan Hasil Observasi
+Kelas : VII C
+tetap cantik. Resep jamu dirahasiakan. Namun sejak tahun 1930-an, sudah mulai
+dikembangkan jamu komersial, yang banyak dijajakan di kota-kota di Jawa. Pada
+mulanya jamu berbentuk serbuk, namun kini ada juga yang dikemas dalam bentuk
+seperti tablet, kapsul, cairan, salep, param, pilis, dan tapal. 
+ Rempah-Rempah
+Rempah dalam arti luas adalah bahan yang berasal dari tumbuhan dan memberikan
+aroma dan rasa khusus pada makanan. Sebagian bahan rempah juga bisa digunakan
+sebagai bahan baku jamu dan kosmetik. Adapun rempah dalam arti sempit adalah
+komoditas perdagangan (pala, cengkeh, lada, kayu manis), yang pada abad ke-17
+menarik bangsa Eropa (misalnya VOC) untuk datang ke Indonesia serta menguasai
+perdagangannya, terutama di daerah Maluku.</h2><br />
+                        <p><strong>Jaw</strong><strong>aban</strong><strong> </strong><strong>:</strong></p><p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>JAM</strong><strong>U</strong></p><p>Jamu adalah obat yang dibuat dari tumbuhan obat, baik dari buah, bunga, daun, tangkai, akar maupun kulitnya. Diperkirakan sekitar 150 jenis tumbuhan yang biasa digunakan sebagai bahan baku. Awalnya jamu hanya dikonsumsi oleh kalangan wanita istana kerajaan Mataram( <strong>Abad</strong><strong> </strong><strong>ke</strong><strong> </strong><strong>-</strong><strong> </strong><strong>1</strong><strong>7</strong><strong> </strong>)</p><p>Mata pelajaran : Bahasa Indonesia</p><p>Hari/Tanggal : Selasa, 3 November 2020</p><p>Waktu : 13.00  s.d  15.00</p><p>Kelas : VII C</p><p>Tetap cantik, resep jamu tetap dirahasiakan sejak tahun 1930, sudah dimulai dikembangkan jamu komersial, yang banyak dijajakan di kota-kota di Jawa. Mulanya jamu terbentuk serbuk, namun kini ada juga yang dikemas dalam bentuk seperti tablet, kapsul, cairan, salep, param, dan dapal.</p><p></p><p></p><p>Rempah-rempah, </p>rempah dalam arti luas adalah bahan yang berasal dari tumbuhan dan memberikan aroma dan rasa khusus pada makanan, sebagian bahan rempah juga bisa digunakan sebagai bahan baku jamu dan kosmetik. Rempah dalam arti sempit adalah komoditas perdagangan ( pala, cengkeh, lada, kayu manis) yang pada abad <strong>ke-17</strong><strong> </strong>menarik bangsa Eropa ( VOC ) untuk datang ke Indonesia serta menguasai perdagangannya, terutama didaerah Maluku.<p>#<strong>S</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>mmbntu</strong><strong> </strong><strong>:</strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="berikut-yang-bukan-temasuk-sepuluh-parami-yaitu-a-danab-silac-adhitthanad-karunakita-menjalani-sila-dengan-menjalani-a-lima-pantangan-dan-lima-kebenaranb-lima-kewajiban-dan-lima-kesu">
+                            27. Berikut yang bukan temasuk sepuluh Parami yaitu .... *A. DanaB. SilaC. AdhitthanaD. KarunaKita menjalani sila dengan menjalani .... *A. lima pantangan dan lima kebenaranB. Lima kewajiban dan lima kesucianC. lima pantangan dan lima kewajibanD. lima kebenaran dan lima kebajikan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Bwang bang bukunya buku apa</p><br />
+                                            <h2 class="ez-toc-section" id="egala-peraturanososiswanya-agar-senantiasa-mentaati-segala-perd-progresif-persuasivee-preventif-regresifenasehati-para-muridnyaendalian-sosial-dapat-melakukukan-fungsinya-dengand-intimidasiat-dil">
+                            28. egala peraturanOŠOSiswanya agar senantiasa mentaati segala perD. progresif - persuasiveE. preventif-regresifenasehati para muridnyaendalian sosial dapat melakukukan fungsinya denganD. Intimidasiat dilakukan secara dua arah untuk membawa situasi ke arahilon pengendalian sosial yang dilakukan oleh individu terhadap13. Ajakan guru di sekolah kepada para siswanyyang berlaku, termasuk jenis pengendalian sosiA. preventif - edukatifB. preventif - represifC. represif-edukatif14. Sekolah dapat menjadi pengendali sosial dengan carA. Memberi kebebasan pada para muridnyaB. Mendidik, membimbing dan menasehati paramC. Mencerdaskan para muridnyaD. Mengawasi setiap perilaku muridnyaE. Memberi sanksi keapada yang melanggar hukum15. Lembaga yang melaksanakan pengendalian sosialhimbauan atau paksaan. Hukum sebagai alau paksaan. Hukum sebagai alat pengendalian sosialdan mutlak, karena disertai dengan ....A. ContohB. TeguranE. PersuasiC. Sanksi16. Pengendalian sosial dapat dilakukan secarayang lebih kondusif. Contoh pengendalian sosial ykelompok misalnya ....A. seorang suami menaehati istrinyaB. masyarakat terhadap warganyaC. seorang guru terhadap muridnyaD. tokoh masyarakat terhadap pemudaE. ayah dan ibu terhadap anaknya17.Agen kontrol sosial yang biasa menggunakan demsosial yang biasa menggunakan demonstrasi sebagai alat control sosialterhadap para pemimpin maupun pejabat pemerintah adalah...A. pengadilanD. polisiB. mahasiswaE. pengadilanC. sekolah18. Sifat utama dari desas-desus adalah penyebaran berita yang menyangkut hal - haltertentu, yaitu ...A. keteraturan sosialD. pengendalian sosialB. penyimpangan sosialE. kerawanan sosialC. kesenjangan sosial19.Adat merupakan pranata yang berperan dalam pengendalian sosial, sebab adapt sebagailembaga berisiA. KebiasaanD. Norma dan nilaiB. Tata kelakuanE. kebudayaanC. Tradisi20. Lembaga sosial yang bertugas mencegah dan mengatasi perilaku menyimpang dengancara menangkap memeriksa serta mengajukan ke pengadilan bagi yang berperilakumenyimpang adalah ...A. HakimB. JaksaC. PolisiD. GuruE. Tokoh masyarakat21. Pernyataan di bawah yang merupakan contoh pengendalian sosial resmi adalah ..A. Ayah memberi teguran anaknya yang bangun kesianganB. Guru menyuruh siswanya mengerjakan perilaku​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>13.c.revresip,dedukatif</p><p>14.mendidik,membimbing dan menasehati param</p><p>15.c.sangsi</p><p>16.E.ayah dan ibu yerhadap anak nya</p><p>17.A.pengadilan</p><p>18.c.kesenjangan sosial</p><p>19.c.tradisi</p><p>20.a.hakim</p><p>21.</p><br />
+                                            <h2 class="ez-toc-section" id="saksamajamu-adalah-obat-yang-dibuatdari-tumbuhan-obat-baik-dari-buah-bunga-daun-tangkai-akar-maupunkulitnya-diperkirakan-ada-sekitar-150jenis-tumbuhan-yang-sudah-biasadigunakan-sebagai-bahan-ba">
+                            29. Saksama!Jamu adalah obat yang dibuatdari tumbuhan obat, baik dari buah.bunga, daun, tangkai, akar, maupunkulitnya. Diperkirakan ada sekitar 150jenis tumbuhan yang sudah biasadigunakan sebagai bahan baku jamu.Konon, pada awalnya jamu hanya di-konsumsi oleh kalangan wanita istanaKerajaan Mataram (abad ke-17) agarmereka tetap cantik. Oleh sebab itu,resep jamu dirahasiakan. Namun sejaktahun 1930-an, sudah mulai dikem-bangkan jamu komersial yang banyakdijajakan di kota-kota besar di Jawa.Pada mulanya jamu berbentuk serbuk,namun kini ada juga yang dikemasdalam bentuk seperti tablet, kapsul,cairan, salep, param, pilis, dan tapal.Gagasan utama paragraf di atasadalah ....a. Jamu dibuat dari tumbuhan obat,baik dari buah, bunga, daun,tangkai, akar, maupun kulitnya.b. Pada mulanya jamu berbentukserbuk, namun kini ada juga yangdikemas dalam bentuk sepertitablet, kapsul, cairan, salep, pa-ram, pilis, dan tapal.C. Sejak tahun 1930-an, sudah mulaidikembangkan jamu komersial,yang banyak dijajakan di kota-kota di Jawa.d. Diperkirakan ada sekitar 150jenis tumbuhan yang sudah biasadigunakan sebagai bahan bakujamu.​</h2><br />
+                        <p>a. Jamu dibuat dari tumbuhan obat,</p><p>baik dari buah, bunga, daun,</p><p>tangkai, akar, maupun kulitnya.</p><p></p><p></p><p>maafya kalau salah</p><p></p><p>a.jamu di buat dari tumbuhan obat,baik dari buah,bunga,daun,tangkai,akar,maupun kulit nya</p><p></p><p><strong>Penjelasan:</strong></p><p>biasannya gagasan utama berada di awal paragraf dan gagasan utama adalah inti dari paragraf atau penjelasan paragraf </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="49-produksi-buah-papaya-terbaik-per-hektar-dapat-mencapai-4-ton-per-hektarntya-pak-dedi-di-paraman-ampalu-satu-siklus-budiidaya-mendapatkan-3-ton-per-kektar-harga-per-kg-buah-papaya-adalah-rp-5-000">
+                            30. 49. produksi buah papaya terbaik per hektar dapat mencapai 4 ton per hektarntya, pak Dedi di Paraman Ampalu satu siklus budiidaya mendapatkan 3 ton per kektar, harga per kg buah papaya adalah Rp 5.000 ,ditanya berapakah total uang yang diperolehnya a.Rp 15.000.000 b.Rp.20..000.000 c. Rp. 25.000.000 d.Rp. 30.000.000​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Rp 15.000.000</p><p><strong>Penjelasan:</strong></p><p>Total uang yang diperoleh Pak Dedi yaitu Rp 15.000.000. Cara menghitungnya adalah sebagai berikut:</p><p></p><p>Jumlah buah papaya yang diperoleh Pak Dedi = 3 ton/hektar x 1 hektar = 3 ton</p><p></p><p>Harga per kg buah papaya = Rp 5.000</p><p></p><p>Total uang yang diperoleh Pak Dedi = 3 ton x Rp 5.000 = Rp 15.000.000</p><br />
+                                            <h2 class="ez-toc-section" id="jamnujamu-adalah-obat-yang-dibuat-dari-tumbuhan-obat-baikdari-buah-bunga-daun-tangkai-akar-maupun-kulitnya-diperkirakan-ada-sekitar-150-jenis-tumbuhan-yang1-sudah-biasa-digunakan-sebagai-bahan-ba">
+                            31. JamnuJamu adalah obat yang dibuat dari tumbuhan obat, baikdari buah, bunga, daun, tangkai, akar maupun kulitnya.Diperkirakan ada sekitar 150 jenis tumbuhan yang1 Sudah biasa digunakan sebagai bahan baku jamu.I Konon, pada awalnya jamu hanya dikonsumsi oleh1 kalangan wanita istana kerajaan Mataram (abad ke-11 agar mereka tetap cantik. Resep jamu dirahasiakan1 Namun sejak tahun 1930-an, sudah mulai1 dikembangkan jamuKomersial, yang banyak dijajakan di kota-kota di Jawa.Pada mulanya jamu berbentuk serbuk, namun kini adauga yang dikemas dalam bentuk seperti tablet, kapsulcairan, salep, param, ilis, dan tapal.Surber: Ensiklopedia Indonesia. Isi dari kutipan buku tersebut adalah...A. Sampai sekarang jamu hanya dikonsurnsi olehkalangan tertentu.dirahasiakanberbagi bentukB. Jamu dibuat dari tumbuhan obat.C. Sampai sekarang resep jamu banyak yangD. Sejak zaman dahulu jamu sudah dibuat dalam</h2><br />
+                        Jawabannya B. Jamu dibuat dari tumbuhan obat.<br /><br />Semoga Membantu! :)<br />Makasih:DJawabannya B, maaf klo salah <br />
+                                            <h2 class="ez-toc-section" id="b-indonesianbacalah-teks-berikut-dengan-saksamasi-keledal-pembawa-garampada-suatu-hari-di-musim-panas-tampak-seekor-keledai-berjalan-di-pegunungan-keledara-beberapa-karung-berisi-garam-di-punggungny">
+                            32. B. IndonesianBacalah teks berikut dengan saksama!Si keledal Pembawa GaramPada suatu hari di musim panas tampak seekor keledai berjalan di pegunungan keledara beberapa karung berisi garam di punggungnya. Karung itu sangat berat, sedangkanmatahari bersinar dengan terima"Aduh. panas sekali. Sepertinya aku sudah tidak kuat berjalan lagi," kata keledai. Namun, taklama berselang, ia melihat sebuah sungai. "Ah, ada sumgait Lebih baik aku berhenti sebentar,kata keledai dengan gembira.Tanpa berpikir panjang, ia masuk ke dalam sungai dan keledai itu tercebur. la berusahauntuk berdiri kembali, fetapi tidak berhasil. Lama sekali keledai berusaha untuk berdiri. Anchnyasemakin berada di dalam air, ia merasa bebanndi punggungnya semakin ringan. Akhimya.keledai itu bias kembali bendiri. "Ya ampun, paramnya habis!" kata kata tuannya dengan marahOh, maaf? Sepertinya garamnya larut di dalam air," kata keledaiBeberapa hari kemudian, keledai mendapat tugas lagi membawa garam. Seperti biasa, iaharus berjalan melewati pegunungan bersama tuannya. "Tak lama lagi aka nada sungai di depansana," kata keledai dalam hati. Ketika berjalan menyeberangi sungai, keledai menjatuhkandirinya dengan sengaja, Byuuur! Tentu saja garam yang ada di punggungnya menjadi larut didalam air. Bebannya menjadi ringan. "Asyik! Jadi ringan!" kata keledai. Namun mengetahuikeledai melakukan hal itu sengaja, tuannya menjadi marah. "dasar keledai malas!" kata tuannyadengan geram.Keesokan harinya, keledai mendapat tugas membawa kapas. Sekali lagi, ia berjalanbersama tuannya melewati pegunungan. Ketika sampai di sungai, lagi-lagi keledai menjatuhkandiri dengan sengaja.Byuuur! Namun, apa yang terjadi. Muatannya menjadi berat sekali. Rupanya kapas yangdibawanya menyerap air dan menjadi seberat batu. Mau tidak mau, keledai harus terus berjalandengan beban yang ada di punggungnya. Keledai berjalan sempoyongan di bawah teri mataharisambil membawa beban berat di punggungnya.9. Tulislah pengertian fabel!10. Tulislah unsur yang membentuk fabel (3 saja)11. Tulislah peristiwa-peristiwa yang terdapat dalam cerita di atas! (3 saja)12. Telaahkanlah struktur fabel di atas!13. Jelaskan apa saja yang dimuat dalam setiap struktur fabel!14. Amanat apakah yang ingin disampaikan dalam fabel di atas!15. Bagaimanakah watak tokoh utama dalam cerita di atas? Jelaskan dengan bukti teks!​​</h2><br />
+                        <p>9. Fabel adalah cerita yang menceritakan kehidupan hewan yang berperilaku menyerupai manusia. Fabel adalah cerita fiksi atau khayalan belaka. </p><p>10. Tema, Latar, Tokoh</p><p>11. <strong>¤</strong>Tanpa berpikir panjang, ia masuk ke dalam sungai dan keledai itu tercebur. la berusaha</p><p>untuk berdiri kembali, tetapi tidak berhasil. Lama sekali keledai berusaha untuk berdiri. Anehnya</p><p>semakin berada di dalam air, ia merasa beban di punggungnya semakin ringan.</p><p><strong>¤</strong> Ketika berjalan menyeberangi sungai, keledai menjatuhkan</p><p>dirinya dengan sengaja, Byuuur! Tentu saja garam yang ada di punggungnya menjadi larut di</p><p>dalam air.</p><p><strong>¤</strong> Ketika sampai di sungai, lagi-lagi keledai menjatuhkan</p><p>diri dengan sengaja.</p><p>Byuuur! Namun, apa yang terjadi. Muatannya menjadi berat sekali.</p><p>12. Maaf yang ini saya lupa</p><p>13. Orientasi : Pengenalan tokoh, Latar (tempat, suasana, waktu)</p><p>Komplikasi : Permasalahan</p><p>Resolusi : Pemecah Masalah</p><p>Koda  : Amanat/Pelajaran</p><p>14. Bekerja keraslah supaya mendapat hasil yang maksimal, bukan malah bersenang" dahulu, bersusah susah kemudian. Jadi kita harus memenuhi amanah dari orang lain yang sudah menjadi tugas kita, dan jangan sekali" menyepelekan suatu pekerjaan</p><p>15. Tidak Mau bekerja keras/Malas</p><p>bukti teks :</p><p><strong>•</strong><strong> </strong><strong>Ketika berjalan menyeberangi sungai, keledai menjatuhkandirinya dengan sengaja, Byuuur! Tentu saja garam yang ada di punggungnya menjadi larut didalam air. Bebannya menjadi ringan. "Asyik! Jadi ringan!" kata keledai. Namun mengetahui</strong><strong> </strong><strong>keledai melakukan hal itu sengaja, tuannya menjadi marah. "dasar keledai malas!" kata tua</strong><strong>n</strong><strong>n</strong><strong>y</strong><strong>a</strong><strong> </strong><strong>dengan geram.</strong></p><p></p><p><strong>M</strong><strong>a</strong><strong>a</strong><strong>f</strong><strong> </strong><strong>K</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>u</strong><strong> </strong><strong>S</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>h</strong><strong>^</strong><strong>_</strong><strong>^</strong></p><p><strong>S</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>B</strong><strong>e</strong><strong>r</strong><strong>m</strong><strong>a</strong><strong>n</strong><strong>f</strong><strong>a</strong><strong>a</strong><strong>t</strong><strong>:</strong><strong>)</strong></p><p><strong>J</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>J</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>T</strong><strong>e</strong><strong>r</strong><strong>b</strong><strong>a</strong><strong>i</strong><strong>k</strong><strong> </strong><strong>Y</strong><strong>a</strong><strong> </strong><strong>K</strong><strong>a</strong><strong>k</strong><strong>:</strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="bacalah-bacaan-dibawah-inisekolah-alternatif-anak-jalanan-saajsekolah-alternatif-anak-jalanan-terletak-di-taman-badan-pendidikan-pelatihan-badiklat-dkijakarta-jalan-hr-rasuna-said-kuningan-jak">
+                            33. Bacalah bacaan dibawah ini!Sekolah Alternatif Anak Jalanan (SAAJ)Sekolah Alternatif Anak Jalanan terletak di Taman Badan Pendidikan Pelatihan (Badiklat) DKIJakarta, Jalan HR Rasuna Said, Kuningan, Jakarta Selatan. Sekolah ini berdiri di tahun 2002 dibawahYayasan Pemberdayaan Rakyat Miskin (PaRam). Kelas-kelasnya terbagi menjadi 3 bagian yaitu kelasTK A1 untuk pendidikan Usia Dini (PAUD), TK A2 untuk usia 5-6 tahun, TK B untuk usia 6-7 tahun.Kegiatan belajar mengajar berlangsung dari hari senin hingga jumat dari jam 11.00 WIB hingga 17.00WIB. Para guru berusaha mencerdaskan para bibit bangsa. Mereka tetap semangat belajar pancasila,lagu-lagu nasional, dan pendidikan dasar agama meskipun ruang kelasnya hanya satu. Tak lupa pulaproses akademik didampingi oleh kegiatan ekstrakurikuler setiap sabtu.5. tuliskan kesimpulan isi teks diatas​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Walau didirikan dibawah yayasan Pemberdayaan Rakyat Miskin, Para guru tetap berusaha mencerdaskan para bibit bangsa dengan menerapkan nilai pancasila, lagu nasional, pendidikan agama, serta estrakulikuler begitu pula para murid yang seharusnya mempunyai jiwa semangat untuk belajar dan terus belajar.</p><p><strong>Semoga membantu ^^</strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jenis-tumbuhan-paku-yang-dapat-dimanfaatkan-sebagai-obat-sakit-otot-atau-tulang-dalam-bentuk-param-serta-sebagai-tanaman-hias-adalah">
+                            34. jenis tumbuhan paku yang dapat dimanfaatkan sebagai obat sakit otot atau tulang dalam bentuk param serta sebagai tanaman hias adalah</h2><br />
+                        Yaitu,Asplenium nidus (paku sarang burung),dan Alsophila glauca (paku tiang).<br />
+                                            <h2 class="ez-toc-section" id="1-over-the-year-kids-with-some-pretty-cool-inventions-2-by-embedding-protein-into-windows-nikita-raflikov-a-way-to-light-gomes-without-the-use-of-electricity-3-over-the-next-18-years-t">
+                            35. 1. Over the year, kids ... with some pretty cool inventions.
+2. By embedding protein into windows, Nikita Raflikov ... a way to light Gomes without the use of electricity.
+3. Over the next 18 years, the Hell Company ... over 550 court challenges including several that went to the Supreme Court, but none was successfull.
+4. George Nissen ... the first modern trampoline ini his parent's garage with the help of his gymnastics coach, Larry Griswold.
+5. Between 1873 and 1874, Bell ... long days and nights trying to perfect the harmonic telegraph.
+6. At 16, Sean Russel ... the Stow It-Don't Throw It Project to combat the negative impact of marine debris on marine wild life.
+7. Kylie Simonds ... a Patent and is trying to raise money to put the backpack into production.
+8. In 2012, a thirteen-year-old girl ... a potentially lucrative business built around her unusual cure for hiccups.
+9. The language of Braille ... the tactile writing system used by the blind and the visually impaired around the world.
+10. Param Jaggi ... an award from the Enviromental Protection Agency for his enviromentally friendly invention which cleans car exhaust that would normally pollute the air.
+A has since become
+B spent
+C has won
+D faced
+E has secured
+F designed
+G launched
+H have come up
+I created
+J has found</h2><br />
+                        1. H<br />2. J<br />3. D<br />4. F<br />5. B<br />6. G<br />7. E<br />8. I<br />9. A<br />10. C<br /><br />You're welcome.<br />
+                                            <h2 class="ez-toc-section" id="tanaman-obat-yang-dapat-digunakan-sebagai-param-untuk-anggota-badan-yang-terkilir">
+                            36. tanaman obat yang dapat digunakan sebagai param untuk anggota badan yang terkilir....</h2><br />
+                        jawabanya : Jahe &amp; KunyitJahe dan kamijara<br /><br />jahe dan kamijara dapat digunakan sebagai param untuk anggota badan yang terkilir.<br /><br />maaf kalo salah :D<br /><br />
+                                            <h2 class="ez-toc-section" id="bacalah-informasi-berikut-untuk-menja-wab-soal-nomor-1-dan-2saaj-terletak-di-taman-badan-pendi-dikan-dan-pelatihan-badiklat-dki-jakartajalan-hr-rasuna-said-kuningan-jakartaselatan-sekolah-alter">
+                            37. Bacalah informasi berikut untuk menja-wab soal nomor 1 dan 2!SAAJ terletak di Taman Badan Pendi-dikan dan Pelatihan (Badiklat) DKI Jakarta,Jalan HR Rasuna Said, Kuningan, JakartaSelatan. Sekolah alternatif anak jalananberdiri tahun 2002 di bawah YayasanPemberdayaan Rakyat Miskin (PaRam).Kelas-kelasnya terbagi menjadi 3 bagian,yaitu kelas TK A1 untuk pendidikan usiadini (PAUD), lalu TK A2 untuk anak usia5-6 tahun, dan TK B untuk anak usia 6-7tahun. Kegiatan belajar mengajar berlang-sung dari Senin hingga Jumat dari pukul11.00 WIB hingga 17.00 WIB.1. Berikut bukan merupakan kelas yangterdapat di sekolah alternatif anakjalanan ....a. TKA1b. TKA2c. TKBd. TKC(Bahasa Indonesia KD 371​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d.TKC</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>karena tidak ada kelas TK C semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="1-parami-adalah-sifat-sempurna-atau-sifat-sifat-luhur-yang-di-2-melepas-juga-berarti-mudah-memaafkan-mudah-3-terimalah-dhamma-dan-lakukan-dalam-kehidupan-kita4-keju">
+                            38. 1.parami adalah sifat sempurna atau sifat-sifat luhur yang di............2.melepas juga berarti mudah memaafkan mudah..........3.terimalah dhamma.....,...........dan lakukan dalam kehidupan kita4.kejujuran membuat orang lain percaya dan............kita5.kita juga harus menunjukkan...........dengan berusaha untuk membuat semua bahagia6.orang yang teguh.............tekad yang kuat dalam melakukan hal hal yang baikpliss jawab..........​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Lestarikan</p><p>2. menghilangkan rasa dendam/tidak menyimpan dendam</p><p>3. ....</p><p>4. memberikan tanggung jawab kpd kita</p><p>5. Simpati/empati</p><p>6. Pendirian</p><p>maaf kak no 3 ga paham</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="paraman-adalah-sapaan-perempuan-kepada-anak-laki-laki-dari-saudara">
+                            39. paraman adalah sapaan perempuan kepada anak laki-laki dari saudara</h2><br />
+                        Paramaan/Amang na poso = Oleh wanita terhadap anak (laki) dari ito.<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/CJxMwbJPisw?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>b_indonesia</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-pat-smp-kelas-7-2019-ppkn.html">Kisi Kisi Pat Smp Kelas 7 2019 Ppkn</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-bahasa-inggris-smk-uas-semester-gasal.html">Kumpulan Soal Bahasa Inggris Smk Uas Semester Gasal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-soal-uas-pai-kelas-8-semester-1.html">Kisi Kisi Soal Uas Pai Kelas 8 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/format-kisi-kisi-soal-uas-sma-kelas-x-pkn.html">Format Kisi Kisi Soal Uas Sma Kelas X Pkn</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/judul-skripsi-tentang-foto-jurnalistik.html">Judul Skripsi Tentang Foto Jurnalistik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-soal-cpns-2018-pdf.html">Kisi Kisi Soal Cpns 2018 Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-volume-tabung.html">Kumpulan Soal Volume Tabung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/jelaskan-apa-yang-dimaksud-dengan-dasar-dasar-perilaku-individual.html">Jelaskan Apa Yang Dimaksud Dengan Dasar dasar Perilaku Individual</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-osindo-biologi.html">Kisi Kisi Osindo Biologi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/manajemen-secara-umum.html">Manajemen Secara Umum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/jelaskan-apa-yang-dimaksud-jalur-sutera.html">Jelaskan Apa Yang Dimaksud Jalur Sutera</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-agama-kelas-7-semester-1-beserta-kunci-jawabannya.html">Kumpulan Soal Agama Kelas 7 Semester 1 Beserta Kunci Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-usbn-bahasa-indonesia-smk-2019.html">Kisi Kisi Usbn Bahasa Indonesia Smk 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-hots-pai-kelas-xii-semester-1.html">Kumpulan Soal Hots Pai Kelas Xii Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-soal-geometri-ruang-kelas-12.html">Kumpulan Soal Geometri Ruang Kelas 12</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kisi-kisi-pemantapan-kabupaten-tabanan-ipa-smp-2017.html">Kisi Kisi Pemantapan Kabupaten Tabanan Ipa Smp 2017</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/contoh-judul-skripsi-beserta-variabelnya.html">Contoh Judul Skripsi Beserta Variabelnya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/kumpulan-judul-skripsi-pendidikan-anak-usia-dini.html">Kumpulan Judul Skripsi Pendidikan Anak Usia Dini</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/jelaskan-apa-yang-dimaksud-ajarin.html">Jelaskan Apa Yang Dimaksud Ajarin</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediailmu.github.io/contoh-judul-skripsi-wirausaha.html">Contoh Judul Skripsi Wirausaha</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediailmu.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediailmu.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediailmu.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediailmu.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediailmu.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
